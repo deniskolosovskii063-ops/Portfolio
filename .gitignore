@@ -28,10 +28,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Binary image assets — these are served from Supabase Storage.
-# The vite.config.ts figmaAssetFallback plugin resolves figma:asset/
-# imports to Supabase CDN URLs via src/asset-map.json at build time.
-# There is no need to track the raw PNG files in git.
+# Binary image assets — served from Supabase Storage
 *.png
 *.jpg
 *.jpeg
@@ -42,16 +39,12 @@ pnpm-debug.log*
 *.bmp
 *.tiff
 *.tif
-
-# Video & audio
 *.mp4
 *.mov
 *.avi
 *.webm
 *.mp3
 *.wav
-
-# Fonts (large binaries — reference via CDN or CSS @font-face URLs instead)
 *.woff
 *.woff2
 *.ttf
