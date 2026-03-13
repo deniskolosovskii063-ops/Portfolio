@@ -173,6 +173,68 @@ jobs:
         uses: actions/deploy-pages@v4
 `;
 
+// ── .gitignore (binary assets are served from Supabase, not git) ──────────────
+const GITIGNORE = `# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Local env files
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.sw?
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Binary image assets — these are served from Supabase Storage.
+# The vite.config.ts figmaAssetFallback plugin resolves figma:asset/
+# imports to Supabase CDN URLs via src/asset-map.json at build time.
+# There is no need to track the raw PNG files in git.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.avif
+*.ico
+*.bmp
+*.tiff
+*.tif
+
+# Video & audio
+*.mp4
+*.mov
+*.avi
+*.webm
+*.mp3
+*.wav
+
+# Fonts (large binaries — reference via CDN or CSS @font-face URLs instead)
+*.woff
+*.woff2
+*.ttf
+*.otf
+*.eot
+`;
+
 // ── vite.config.ts (embedded so CI always has the correct plugin) ─────────────
 // Uses __figma__ prefix instead of \0 to avoid null-byte escaping issues.
 // In Figma Make the platform plugin runs first so our resolveId/load never fire.
@@ -373,7 +435,19 @@ export default function MigratePage() {
     log('debug', `GitHub repo: ${ghOwner}/${ghRepo}  branch: ${ghBranch}`);
 
     try {
-      // 2a. Commit deploy.yml [skip ci] — doesn't trigger workflow
+      // 2a. Commit .gitignore [skip ci]
+      log('info', 'Коммичу .gitignore [skip ci]...');
+      const gitignoreSha = await ghGetFileSha(ghOwner, ghRepo, '.gitignore', ghToken);
+      const gitignoreCommit = await ghPutFile(
+        ghOwner, ghRepo, ghBranch, ghToken,
+        '.gitignore',
+        toBase64(GITIGNORE),
+        (gitignoreSha ? 'chore: update' : 'chore: add') + ' .gitignore — binary assets served from Supabase [skip ci]',
+        gitignoreSha,
+      );
+      log('ok', `✓ .gitignore ${gitignoreSha ? 'обновлён' : 'создан'} (${gitignoreCommit.slice(0, 7)}) [skip ci]`);
+
+      // 2b. Commit deploy.yml [skip ci] — doesn't trigger workflow
       log('info', 'Обновляю .github/workflows/deploy.yml [skip ci]...');
       const wfShaExisting = await ghGetFileSha(ghOwner, ghRepo, '.github%2Fworkflows%2Fdeploy.yml', ghToken);
       const wfSha = await ghPutFile(
@@ -385,7 +459,7 @@ export default function MigratePage() {
       );
       log('ok', `✓ deploy.yml ${wfShaExisting ? 'обновлён' : 'создан'} (${wfSha.slice(0, 7)}) [skip ci]`);
 
-      // 2b. Commit vite.config.ts [skip ci] — critical: this has the figmaAssetFallback plugin
+      // 2c. Commit vite.config.ts [skip ci] — critical: this has the figmaAssetFallback plugin
       log('info', 'Обновляю vite.config.ts [skip ci]...');
       const viteShaExisting = await ghGetFileSha(ghOwner, ghRepo, 'vite.config.ts', ghToken);
       const viteSha = await ghPutFile(
@@ -397,7 +471,7 @@ export default function MigratePage() {
       );
       log('ok', `✓ vite.config.ts ${viteShaExisting ? 'обновлён' : 'создан'} (${viteSha.slice(0, 7)}) [skip ci]`);
 
-      // 2c. Fetch asset-map from KV
+      // 2d. Fetch asset-map from KV
       log('info', 'Получаю asset-map.json с Supabase KV...');
       const mapRes = await fetch(`${SERVER}/assets/export-json`, {
         headers: { Authorization: `Bearer ${publicAnonKey}` },
@@ -410,7 +484,7 @@ export default function MigratePage() {
       const populated = mapKeys.filter((k) => mapObj[k] && mapObj[k] !== '');
       log(populated.length > 0 ? 'ok' : 'warn', `✓ asset-map: ${populated.length} заполненных / ${mapKeys.length} всего`);
 
-      // 2d. Commit asset-map.json — THIS triggers the workflow
+      // 2e. Commit asset-map.json — THIS triggers the workflow
       log('info', 'Коммичу src/asset-map.json → триггерит GitHub Actions...');
       const existingSha = await ghGetFileSha(ghOwner, ghRepo, 'src%2Fasset-map.json', ghToken);
       log('debug', existingSha ? `Существующий SHA: ${existingSha.slice(0, 7)}` : 'Файл не существует — создаю');
@@ -424,7 +498,7 @@ export default function MigratePage() {
       log('ok', `✓ src/asset-map.json закоммичен → commit SHA: ${commitSha}`);
       log('info', `Ссылка на Actions: ${actUrl}`);
 
-      // 2e. Set VITE_BASE variable
+      // 2f. Set VITE_BASE variable
       if (ghBase && ghBase !== '/') {
         log('info', `Устанавливаю VITE_BASE="${ghBase}" в GitHub Actions Variables...`);
         try {
