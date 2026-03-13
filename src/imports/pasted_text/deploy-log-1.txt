@@ -1,0 +1,138 @@
+head
+═══ PHASE 1 / 3 — Загрузка ассетов в Supabase Storage ═══
+info
+Проверяю уже загруженные файлы в Storage...
+debug
+Storage уже содержит 139 файлов
+info
+Всего ассетов: 139 | пропускаем: 139 | к загрузке: 0
+ok
+✓ Загрузка завершена. OK: 139 Ошибок: 0
+head
+═══ PHASE 2 / 3 — Коммит в GitHub ═══
+debug
+GitHub repo: deniskolosovskii063-ops/Portfolio branch: main
+info
+Обновляю .github/workflows/deploy.yml...
+ok
+✓ deploy.yml обновлён (commit: c9238d0)
+info
+Получаю asset-map.json с Supabase KV...
+debug
+asset-map.json: 139 записей
+ok
+✓ asset-map: 139 заполненных / 139 всего
+info
+Коммичу src/asset-map.json...
+debug
+Существующий SHA: 9e26dfe
+ok
+✓ src/asset-map.json закоммичен → commit SHA: ff08d0a20dc56df3d122a1f587a5f04f885c1d9d
+info
+Ссылка на Actions: https://github.com/deniskolosovskii063-ops/Portfolio/actions
+info
+Устанавливаю VITE_BASE="/Portfolio/" в GitHub Actions Variables...
+debug
+VITE_BASE exists: true status: 200
+debug
+VITE_BASE PUT response: 204
+ok
+✓ VITE_BASE="/Portfolio/" сохранён
+head
+═══ PHASE 3 / 3 — Слежу за GitHub Actions ═══
+info
+Ожидаю появления workflow run...
+debug
+Ищу run с head_sha=ff08d0a20dc56df3d122a1f587a5f04f885c1d9d или созданный после 2026-03-13T07:57:33.775Z
+debug
+Polling attempt #1...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #2...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #3...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #4...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #5...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #6...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #7...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #8...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=in_progress conclusion=null url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+info
+⏳ Run #23041606108 — status: in_progress (ждём завершения...)
+debug
+Polling attempt #9...
+debug
+Actions API response: HTTP 200
+debug
+Получено 5 runs. IDs: 23041606108, 23041605320, 23041351687, 23041086631, 23041086744
+debug
+Найден run #23041606108 status=completed conclusion=failure url=https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
+err
+❌ Деплой завершился с ошибкой: conclusion="failure"
+err
+Подробности: https://github.com/deniskolosovskii063-ops/Portfolio/actions/runs/23041606108
