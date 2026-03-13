@@ -32,7 +32,9 @@ function figmaAssetFallback() {
       }
     },
     resolveId(id) {
-      if (id.startsWith('figma:asset/')) return '__figma_asset__:' + id
+      if (id.startsWith('figma:asset/') && Object.keys(assetMap).length > 0) {
+        return '__figma_asset__:' + id
+      }
       return null
     },
     load(id) {
