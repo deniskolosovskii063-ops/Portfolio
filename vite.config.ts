@@ -4,12 +4,6 @@ import fs from 'fs'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
-/**
- * figmaAssetFallback
- * Resolves figma:asset/hash.png imports using src/asset-map.json.
- * In Figma Make the platform plugin handles these first; this plugin
- * is a no-op there and only activates in plain vite build (CI / local).
- */
 function figmaAssetFallback() {
   let assetMap = {}
   return {
@@ -23,12 +17,10 @@ function figmaAssetFallback() {
           assetMap = Object.fromEntries(
             Object.entries(raw).filter(([k]) => /^[0-9a-f]{40}\.png$/i.test(k))
           )
-          console.log('[figma-asset-fallback] loaded ' + Object.keys(assetMap).length + ' assets from asset-map.json')
+          console.log('[figma-asset-fallback] loaded ' + Object.keys(assetMap).length + ' assets')
         } catch (e) {
           console.warn('[figma-asset-fallback] failed to parse asset-map.json:', e)
         }
-      } else {
-        console.warn('[figma-asset-fallback] src/asset-map.json not found — figma:asset/ imports will be empty strings')
       }
     },
     resolveId(id) {
