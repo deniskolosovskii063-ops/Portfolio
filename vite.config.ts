@@ -15,7 +15,7 @@ export default defineConfig({
       // Exclude Figma-generated imports from Babel to avoid the 500 KB
       // "deoptimised styling" warning. Vite's built-in esbuild transform
       // handles JSX/TSX in these files with no file-size limit.
-      exclude: [/\/src\/imports\//],
+      exclude: [new RegExp('/src/imports/')],
     }),
     tailwindcss(),
   ],
