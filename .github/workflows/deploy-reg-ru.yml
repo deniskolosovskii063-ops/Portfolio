@@ -48,6 +48,8 @@ jobs:
           find dist -type f | wc -l
 
       - name: Upload to REG.RU via FTP
+        id: deploy_ftp
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -55,6 +57,20 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_TARGET_DIR }}
+          dangerous-clean-slate: true
+
+      - name: Upload to REG.RU via FTPS (fallback)
+        if: steps.deploy_ftp.outcome == 'failure'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          security: loose
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_TARGET_DIR }}
           dangerous-clean-slate: true
