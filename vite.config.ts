@@ -18,7 +18,7 @@ import react from '@vitejs/plugin-react'
  */
 function figmaAssetFallback() {
   const PREFIX = 'figma:asset/';
-  const VIRTUAL = 'virtual:figma-asset/';
+  const VIRTUAL = '\0virtual:figma-asset/';
 
   let assetMap: Record<string, string> = {};
   try {

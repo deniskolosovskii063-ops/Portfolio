@@ -170,9 +170,17 @@ export function PageLoader() {
         if (dismissed.current) return;
         const imgs   = Array.from(document.querySelectorAll<HTMLImageElement>('img'));
         const total  = imgs.length;
-        const loaded = imgs.filter(img => img.complete && img.naturalWidth > 0).length;
+        // Count both successfully loaded and failed images as "settled" so a
+        // single broken/lazy image cannot block the page forever.
+        const loaded = imgs.filter(img => img.complete).length;
         const pct    = total === 0 ? 1 : loaded / total;
         const elapsed = performance.now() - mountedAt.current;
+
+        // Hard cap for non-home pages too: never keep loader forever.
+        if (elapsed >= MAX_WAIT_MS) {
+          dismiss();
+          return;
+        }
 
         if (pct >= 0.3 && elapsed >= MIN_SHOW_MS) {
           dismiss();
