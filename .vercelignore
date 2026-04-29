@@ -1,0 +1,13 @@
+node_modules
+dist
+.git
+.tmp-remote-check
+asset-usage-map.json
+asset-usage-map.csv
+asset-integration-report.json
+public/https:
+public/_assets
+public/github-assets
+public/32533ee4cbf9c603e2f2fed9d8e5f11a2d539413.png
+public/b696116eb88ca54c5c7529edc95fa18f808be026.png
+public/cd508c92d100afca7d7e6acb61413601dadc5f94.png
