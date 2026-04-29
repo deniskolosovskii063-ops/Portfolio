@@ -38,14 +38,29 @@ jobs:
           RewriteRule ^ index.html [L]
           EOF
 
-      - name: Upload to REG.RU via FTP/SFTP
+      - name: Upload to REG.RU via SFTP (primary)
+        id: deploy_sftp
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ${{ secrets.FTP_PROTOCOL || 'ftp' }}
-          port: ${{ secrets.FTP_PORT || 21 }}
+          protocol: sftp
+          port: 22
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_TARGET_DIR }}
+          dangerous-clean-slate: true
+
+      - name: Upload to REG.RU via FTP (fallback)
+        if: steps.deploy_sftp.outcome == 'failure'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_TARGET_DIR }}
           dangerous-clean-slate: true
