@@ -28,7 +28,15 @@ jobs:
         run: npm run build
 
       - name: Add SPA fallback rules for Apache
-        run: cp public/.htaccess dist/.htaccess
+        run: |
+          cat > dist/.htaccess <<'EOF'
+          Options -MultiViews
+          RewriteEngine On
+          RewriteCond %{REQUEST_FILENAME} -f [OR]
+          RewriteCond %{REQUEST_FILENAME} -d
+          RewriteRule ^ - [L]
+          RewriteRule ^ index.html [L]
+          EOF
 
       - name: Upload to REG.RU via FTP/SFTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
