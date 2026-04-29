@@ -57,15 +57,20 @@ import _9305a955 from "figma:asset/9305a95552fd76d66a8d58346d2076c0b33e9e41.png"
 import _45e30580 from "figma:asset/45e3058076d46e843d78f061a221b798bb0fc0ec.png";
 import _93ca33be from "figma:asset/93ca33be4d45388eebb93d9eaaa8d49a936bfc3c.png";
 
-// ── GID Content — Channels ────────────────────────────────────────────────────
-import _7d94d5b9 from "figma:asset/7d94d5b9ecf39904f5179e49e3d9f9f9fe1727c5.png";
-import _3017883a from "figma:asset/3017883a6122368c771cff547f694fec29b96e0e.png";
-import _a4ca2e94 from "figma:asset/a4ca2e944cd3523072d39b811371e831ee647c80.png";
+// ── GID Content — Comment phones 3-in-a-row (Frame2147223001-96-11326) ────────
+import _5f93c3d6 from "figma:asset/5f93c3d6f1bead2155ad2a1d564f5aa81da3c30c.png"; // comment left
+import _aa1292f2 from "figma:asset/aa1292f239c052f48da65c147f9c0811757f021f.png"; // comment center
+import _e39c351f from "figma:asset/e39c351f56fb4305c617f6263b62df6206157857.png"; // comment right
 
-// ── GID Content — Comments / Auth ────────────────────────────────────────────
-import _a51e244d from "figma:asset/a51e244d6112e3a67d86ab6d0eb54b45cbddf73f.png";
-import _623b9f0e from "figma:asset/623b9f0ed273bba82496e63ff865dab2a64e1aa8.png";
-import _080f97b9 from "figma:asset/080f97b97aec3d9940070787029dc53b43dae079.png";
+// ── GID Content — Channels + Backgrounds (Frame2147223001) ───────────────────
+import _8fb35513 from "figma:asset/8fb3551320b3836712d8f844d464ce76a912e491.png"; // phone 1 top
+import _1e02c827 from "figma:asset/1e02c827ce713a51ed6ec070312b35948db67d40.png"; // phone 2
+import _a1552e9b from "figma:asset/a1552e9b512f32c4064a95503e74780a7eb7e8ec.png"; // phone 3
+import _b696116e from "figma:asset/b696116eb88ca54c5c7529edc95fa18f808be026.png"; // phone 4
+import _24d43030 from "figma:asset/24d43030041749a1dc31092471b8e3e4c9d24783.png"; // phone 5
+import _2c5f9f56 from "figma:asset/2c5f9f56e3f559a5e12acc9f4e286492c7177246.png"; // phone 6 bottom
+import _379b4c1b from "figma:asset/379b4c1b4d3f9c1aaa8f550d882edbbb2f63e6e3.png"; // bg woman
+import _73d74793 from "figma:asset/73d74793fd364aef15bf004e8b0f07d7af55edf6.png"; // bg man
 
 // ── GID Content — Blogs ───────────────────────────────────────────────────────
 import _2e8d673f from "figma:asset/2e8d673fc189d6a5968a3de0ee1e18fc30fe53f6.png";
@@ -128,12 +133,38 @@ import _939c24e9 from "figma:asset/939c24e9457721fee9d1e43ae742669be8adec14.png"
 import _d01b860e from "figma:asset/d01b860ed9c692452434b338834207c4fb9fa8a5.png";
 import _66bddac2 from "figma:asset/66bddac21e2468e0618748851a2ddfc502c93720.png";
 
+// ── Noveba (fintech case) ────────────────────────────────────��────────────────
+import _novebaVector     from "figma:asset/aaa676d0d52401bf37814cf59bcb8e640162fb92.png";
+import _novebaIcon       from "figma:asset/fc25e4f5f7605daab8e01e3bdb49ef2c6a1d7cf8.png";
+import _novebaGroup794   from "figma:asset/f0a5a169b3b6645ad2104b1123241b145dd4a1ff.png";
+import _novebaFrame013   from "figma:asset/46d8cf6e29c4638044d3589a65b77155e536c559.png";
+import _novebaPhone31    from "figma:asset/a3967af86e6aebbb30bf3d1eb415f3eb822aed75.png";
+import _novebaPhone11    from "figma:asset/ea4ca41b5b6f96553b1e8fe4cee1a3febb7336e1.png";
+import _novebaGroup793   from "figma:asset/83fa246ecf6ba4e0a16e69dd93edd72d9bac84ea.png";
+import _novebaPhone1     from "figma:asset/72d065f8848495759ea8824b2d89d8c8f0704b66.png";
+import _novebaPhone21    from "figma:asset/9c653bf665fa196c05ac7760918e48222065bdae.png";
+import _novebaGroup798bg from "figma:asset/bd0e56bf6e9d68376cc46189a29fc1da338d15a3.png";
+import _novebaPhone42    from "figma:asset/709559c3867f64ae97fdca04adceaa5db15ebf11.png";
+import _novebaPhone14    from "figma:asset/3fd12a56b4a3168f2bd65408167228bafc426a7c.png";
+import _novebaPhone33    from "figma:asset/85239427b6dbe969f2e520a588f438385dcd1708.png";
+import _novebaPhone4     from "figma:asset/cd508c92d100afca7d7e6acb61413601dadc5f94.png";
+import _novebaPhone23    from "figma:asset/22bd0fa3c73d90e3686510bfb4cd9eae020e6296.png";
+import _novebaFrame998   from "figma:asset/1b475722cf5220d3b3c6e2fe10085721b214a367.png";
+import _novebaFrame929   from "figma:asset/1e26318f2ca2d72f9419d1c7b7419c2e0079564e.png";
+import _novebaFrame007   from "figma:asset/40889ef8e7d9cd74cd2b43bad08a1316d2619bfc.png";
+import _novebaPhone5     from "figma:asset/a89b705fc7b1c295c6ff04db6638fdfef9952ca7.png";
+import _novebaPhone15    from "figma:asset/1faff870058740fa63e3182b40630b6db606b13c.png";
+import _novebaFrame008   from "figma:asset/8f0db03076a75a2e05b34e9e310bd536412b82f2.png";
+import _novebaGroup801bg from "figma:asset/4ec7aba99419cd6d448575a03ec3e5f365155f8b.png";
+import _novebaFrame507   from "figma:asset/381e36a352a3b545560b15e68554b8c011d6a07b.png";
+import _novebaFrame474   from "figma:asset/789772cfea8b75250178b6a652557fd98d894a29.png";
+
 // ── GID Content — News ────────────────────────────────────────────────────────
 import _e5267686 from "figma:asset/e52676864f1c47149204f1d37c3f696bb23e32d9.png";
 import _cea26a6e from "figma:asset/cea26a6e715fc266e545b9879e44a215eaa40adb.png";
 import _2e87fd02 from "figma:asset/2e87fd02959df06a560dc2e4c2a22125121b493e.png";
 
-// ── GID Content — Bonus ───────────────────────────────────────────────────────
+// ── GID Content — Bonus ──────────────────────────���───────────────────────��────
 import _c0e67e28 from "figma:asset/c0e67e287838f98f5874e0a03a5305ed300b944b.png";
 import _dc33a161 from "figma:asset/dc33a1613b8653cb174a8215a28bc02990404edb.png";
 
@@ -155,6 +186,18 @@ import _36a283b0 from "figma:asset/36a283b0818cbb993a3af5ed58381dfaa2ee89e1.png"
 import _a8f7631c from "figma:asset/a8f7631c1b36f8df397345be4b29c5f01659c792.png";
 import _9a71c60f from "figma:asset/9a71c60fc38ef5fd7dbcdb4c7aedb5478fafd2ae.png";
 
+// ── HomePage (Frame2147223015) ─���──────────────────────────────────────────────
+import _home_avatar     from "figma:asset/29117de79a1c89ab4964cad7c1cde1f057c58851.png";
+import _home_gid_bg     from "figma:asset/d7d4dcbdc8666c8ccdc838ba7d98c0a20a302c38.png";
+import _home_gid_phone  from "figma:asset/bad2c28f2d9889ae722bf4a7a81f17de992bfe28.png";
+import _home_noveba_bg  from "figma:asset/12b4d4575123aa4f8cdffebbf7a4d19b2199e31d.png";
+import _home_noveba_ph  from "figma:asset/20c4772bb34ccd16bae8384c3e65c598cc330f1e.png";
+import _home_gpid_phone from "figma:asset/001d10671b8709574c548455c832716daba56f5c.png";
+import _home_zenit_bg      from "figma:asset/30009fa3b20fa672955ba9f55ca66aee57bcaa5a.png";
+// ── HomePage — MTS Cloud card (Frame2147223016) ───────────────────────────────
+import _home_mts_hardware  from "figma:asset/97d6397b9d2d57eced5a53d8a5e269dd752a82b0.png";
+import _home_mts_tablet    from "figma:asset/48d36a8ee3e4cc52bd163a992c47b1fd3a826acf.png";
+
 // ── GazpromID (Frame2147222933) ───────────────────────────────────────────────
 import _6efd99ee from "figma:asset/6efd99ee8ab026ae08302bdeea53f81901ab767e.png";
 import _150583aa from "figma:asset/150583aa5d12631e55d93562e8abf6e4a748cf63.png";
@@ -175,6 +218,92 @@ import _9d6d89d3 from "figma:asset/9d6d89d3bf3b053501d673ca5609c96a6cf7b7de.png"
 import _a1f51923 from "figma:asset/a1f519233988bc6a6d158bc0b2d7af02025cb644.png";
 import _ec232279 from "figma:asset/ec232279b1ec17899000f3e17ad7131b8b337c63.png";
 import _1d598f48 from "figma:asset/1d598f48d7e9dd66201b8008a2a67c828fe7acb7.png";
+
+// ── Zenit FC (Frame2147222944) ────────────────────────────────────────────────
+import _z655ac402 from "figma:asset/655ac4029fdc11d7a941b930baefbf140d6fb707.png";
+import _z8ae5c898 from "figma:asset/8ae5c8981592f1f670e1b51ad5c2aa9f16621d13.png";
+import _z0213f12b from "figma:asset/0213f12b4617f53c17bc08ef67124214911bbf1c.png";
+import _z8eabc817 from "figma:asset/8eabc817700ee43aac676179ed9e2a9848a62df1.png";
+import _z2e77c5b0 from "figma:asset/2e77c5b04337768d03cd35a0d2ee149a49ceb51d.png";
+import _z840caeb2 from "figma:asset/840caeb2ffb2b638b556796c36893087076abb16.png";
+import _z699029bc from "figma:asset/699029bc8a219d4ba46968910fa6d0d0e1534f0f.png";
+import _zaf778204 from "figma:asset/af778204e6a7cc1b1bcfcae004c1f46e345362b9.png";
+import _z231b6eae from "figma:asset/231b6eae338caf5768008a7cf4e5554f8eb3cd10.png";
+import _z20cdd3ae from "figma:asset/20cdd3ae2afb89c113c77f03c667b23a5c84a421.png";
+import _zd235eac6 from "figma:asset/d235eac6f61e4c1f966837870748509c29f9e852.png";
+import _zcd9c95af from "figma:asset/cd9c95aff32db56a36975fb1d717167d5c711dea.png";
+import _z8fca6e7b from "figma:asset/8fca6e7b103c444a45d928e145fe04b996f425d8.png";
+import _z2865f9cc from "figma:asset/2865f9ccbac1b64ce34bdc206a3010caa6b3e10b.png";
+import _z5dcb798c from "figma:asset/5dcb798cac9ca4beecaf9c6da84b7fd988fc1e5d.png";
+import _zcd5c1f84 from "figma:asset/cd5c1f84d6e539b6bee121b8d54ab1568011d344.png";
+import _z217a6c2c from "figma:asset/217a6c2cc8c1ca33ce74c6906703d1fc8ae95228.png";
+import _z9ec02cc8 from "figma:asset/9ec02cc86230e25fa78d3c47e38987d05b042c74.png";
+import _ze63b11cb from "figma:asset/e63b11cb451488e485cf884882de2bd7af1ece7d.png";
+import _z479aa9ba from "figma:asset/479aa9bac67cf71c2b79a7aec5be086705052273.png";
+import _z8cd4ded4 from "figma:asset/8cd4ded4449978fe794cf04562235c89bec78b28.png";
+import _z634c54a3 from "figma:asset/634c54a329f85340cb379da8ca6d57fb40af3b45.png";
+import _z054d473e from "figma:asset/054d473edeb3dbbc2365255720593fa887a690fb.png";
+import _zdaf24e5d from "figma:asset/daf24e5d3cc6231165c79ad96f2d1e1d59aa0561.png";
+import _z2aef5c6f from "figma:asset/2aef5c6f431603bd265ab7e510c14121178fd618.png";
+import _z8f8cc89d from "figma:asset/8f8cc89d8d9b954e29b97af7cac24f81521f79e8.png";
+import _z413ed18d from "figma:asset/413ed18d0ae95659d6c66722882fe12b7b1112cc.png";
+import _z841edacf from "figma:asset/841edacf9990dcd139fb87201d6807fe954cd8f6.png";
+import _z39ee3297 from "figma:asset/39ee3297bcfacc4481271b96f761771a6b116133.png";
+import _ze9c3fa70 from "figma:asset/e9c3fa703018586787bd90976410abe558722efd.png";
+import _z6cbf3486 from "figma:asset/6cbf34866a9e5d9b56f9a1f0e25edfce06320d57.png";
+import _ze1665213 from "figma:asset/e1665213e77ab6f2a929bfcb36e3b0a8f0058305.png";
+import _z3182b654 from "figma:asset/3182b654bec731ac3124445e978365f54e840847.png";
+import _z7108c1cf from "figma:asset/7108c1cf0acb939b8e6090bbe87185a1b31f6858.png";
+import _z66a06f12 from "figma:asset/66a06f125681119e08505e59eea09ddfcbdb728c.png";
+import _z9a12df43 from "figma:asset/9a12df434db7c919d80149c62a4d467fe885385a.png";
+import _z3759d80a from "figma:asset/3759d80adced0f78111de928027a0dd2bf628147.png";
+import _zcbdfd9bd from "figma:asset/cbdfd9bd535731b8730d09734fc90b045c7fe620.png";
+import _z07f1eaa0 from "figma:asset/07f1eaa030c95a7ee4ffc09348df54f2ec762693.png";
+import _zdb095ddf from "figma:asset/db095ddf9a3246a662f52a275ab05925470ab4d2.png";
+import _z7658e124 from "figma:asset/7658e12427f4aa10ea0c29786a718ce3b4bdd89f.png";
+
+// ── MTS Web Services [Cloud] (Frame2147222919) ────────────────────────────────
+import _mts01 from "figma:asset/4becd37c4877176b60ae671d73659d94e2a7f992.png";
+import _mts02 from "figma:asset/10ad1fa710b29b909003a179fc901d9225805cfe.png";
+import _mts03 from "figma:asset/4aad801d92ec48b131f2c0db1785e02086f28e1a.png";
+import _mts04 from "figma:asset/927a5ee7fc629b27635663f81bc409ccce095282.png";
+import _mts05 from "figma:asset/d89a24611e944dc38e15bda908644bbe3c0ae23e.png";
+import _mts06 from "figma:asset/60d8e7f9fa583d7f04d95d53fa9d0d9206549fcf.png";
+import _mts07 from "figma:asset/abfc3367ded30ff27b8e46c5a8d546afc3b02915.png";
+import _mts08 from "figma:asset/adb8df09a88a0387767bf7b6588b3ad11c9808ac.png";
+import _mts09 from "figma:asset/0206981a6c7d2b153216ce739293c0bfabbc3010.png";
+import _mts10 from "figma:asset/975737d90ac4661b00303d490b231b2574fba9ef.png";
+import _mts11 from "figma:asset/e9a09f99ab883613db202a8ea3c34164a2da17e6.png";
+import _mts12 from "figma:asset/de6f5923b705ef8f4857a29c21a5c6e5c133dc43.png";
+import _mts13 from "figma:asset/a65d5b58447e9baa03d9f034cf3c7ae727f2734e.png";
+import _mts14 from "figma:asset/db7045b90c70549f530113a4626665819615bc57.png";
+import _mts15 from "figma:asset/bdfc6ee7291b266a5d19aa77b1eab2a25e7cb14f.png";
+import _mts16 from "figma:asset/cf615c68ae73016da41278b8bd8eb5ed94b2b4d3.png";
+import _mts17 from "figma:asset/9930516db6d32c8f4b24274ffb0f17910d90bcfe.png";
+import _mts18 from "figma:asset/59b6d6220a2080e9c53f317e980b8368343f906a.png";
+import _mts19 from "figma:asset/34ffb293694d3fc39b8fe7cb23f5fcdc30231801.png";
+
+// ── GID Hub (Frame2147222944-157-408) ─────────────────────────────────────────
+import _gidhub01 from "figma:asset/caab6aafb235ada65bc1241ef00f897e6e348892.png";
+import _gidhub02 from "figma:asset/2df0891ec058c27c0e54e4a6f53865471f8ffe50.png";
+import _gidhub03 from "figma:asset/b3a88e0e2e236f7d05dad51f8ae167e43504cca6.png";
+import _gidhub04 from "figma:asset/2c4764a11e89e180cf9434518f0bbe6776dc2853.png";
+import _gidhub05 from "figma:asset/21c70193e7830536fbdf25c92b6779f19577f1ec.png";
+import _gidhub06 from "figma:asset/d8b8423d048f34ab733cca2d0acab5f08c303139.png";
+import _gidhub07 from "figma:asset/acc2db208484f74a7b627817ba04b9a4076ca968.png";
+import _gidhub08 from "figma:asset/da4db3a8bedcd65032ab6368dad6145b80240a7a.png";
+import _gidhub09 from "figma:asset/6868ce49a85d8081b9ce1ca85c583c1162798f79.png";
+import _gidhub10 from "figma:asset/17c3a4ffac1b493bd667947b61da760538ac4b90.png";
+import _gidhub11 from "figma:asset/48d9902acca5e21990e274d6b1e07792f766e1a6.png";
+import _gidhub12 from "figma:asset/369e627f9de06951e1776bedb39e6b928ea31824.png";
+import _gidhub13 from "figma:asset/66a9dfae2361457443436ad231292e51424077cd.png";
+import _gidhub14 from "figma:asset/01024713894e2fbdb057ec21ea58ab4c5f3deba6.png";
+import _gidhub15 from "figma:asset/b746da9489025ebcd3bc353f0932fa475c9cf9f1.png";
+// ── MTS Mobile BG ─────────────────────────────────────────────────────────────
+import _mts_mobile_bg from "figma:asset/f5f60b93af9977b89f8fbde56fc5705d0c16fc59.png";
+// ── GID Hub home card (Frame2147223026) ───────────────────────────────────────
+import _gidhub_home_bg     from "figma:asset/432003c659d71f49ca9b902ae734e4f8640fe8ea.png";
+import _gidhub_home_tablet from "figma:asset/67021368ca94ceaaf393ddf959c47ca678b4b487.png";
 
 /**
  * Map: filename (hash.png) → runtime-resolved URL
@@ -226,14 +355,19 @@ export const assetRegistry: Record<string, string> = {
   "9305a95552fd76d66a8d58346d2076c0b33e9e41.png": _9305a955,
   "45e3058076d46e843d78f061a221b798bb0fc0ec.png": _45e30580,
   "93ca33be4d45388eebb93d9eaaa8d49a936bfc3c.png": _93ca33be,
-  // Channels
-  "7d94d5b9ecf39904f5179e49e3d9f9f9fe1727c5.png": _7d94d5b9,
-  "3017883a6122368c771cff547f694fec29b96e0e.png": _3017883a,
-  "a4ca2e944cd3523072d39b811371e831ee647c80.png": _a4ca2e94,
-  // Comments
-  "a51e244d6112e3a67d86ab6d0eb54b45cbddf73f.png": _a51e244d,
-  "623b9f0ed273bba82496e63ff865dab2a64e1aa8.png": _623b9f0e,
-  "080f97b97aec3d9940070787029dc53b43dae079.png": _080f97b9,
+  // Comment phones 3-in-a-row (Frame2147223001-96-11326)
+  "5f93c3d6f1bead2155ad2a1d564f5aa81da3c30c.png": _5f93c3d6,
+  "aa1292f239c052f48da65c147f9c0811757f021f.png": _aa1292f2,
+  "e39c351f56fb4305c617f6263b62df6206157857.png": _e39c351f,
+  // Channels + backgrounds (Frame2147223001)
+  "8fb3551320b3836712d8f844d464ce76a912e491.png": _8fb35513,
+  "1e02c827ce713a51ed6ec070312b35948db67d40.png": _1e02c827,
+  "a1552e9b512f32c4064a95503e74780a7eb7e8ec.png": _a1552e9b,
+  "b696116eb88ca54c5c7529edc95fa18f808be026.png": _b696116e,
+  "24d43030041749a1dc31092471b8e3e4c9d24783.png": _24d43030,
+  "2c5f9f56e3f559a5e12acc9f4e286492c7177246.png": _2c5f9f56,
+  "379b4c1b4d3f9c1aaa8f550d882edbbb2f63e6e3.png": _379b4c1b,
+  "73d74793fd364aef15bf004e8b0f07d7af55edf6.png": _73d74793,
   // Blogs
   "2e8d673fc189d6a5968a3de0ee1e18fc30fe53f6.png": _2e8d673f,
   "5b8bcae31de335a7584d769ae05d380b2e1a6178.png": _5b8bcae3,
@@ -291,6 +425,31 @@ export const assetRegistry: Record<string, string> = {
   "939c24e9457721fee9d1e43ae742669be8adec14.png": _939c24e9,
   "d01b860ed9c692452434b338834207c4fb9fa8a5.png": _d01b860e,
   "66bddac21e2468e0618748851a2ddfc502c93720.png": _66bddac2,
+  // Noveba
+  "aaa676d0d52401bf37814cf59bcb8e640162fb92.png": _novebaVector,
+  "fc25e4f5f7605daab8e01e3bdb49ef2c6a1d7cf8.png": _novebaIcon,
+  "f0a5a169b3b6645ad2104b1123241b145dd4a1ff.png": _novebaGroup794,
+  "46d8cf6e29c4638044d3589a65b77155e536c559.png": _novebaFrame013,
+  "a3967af86e6aebbb30bf3d1eb415f3eb822aed75.png": _novebaPhone31,
+  "ea4ca41b5b6f96553b1e8fe4cee1a3febb7336e1.png": _novebaPhone11,
+  "83fa246ecf6ba4e0a16e69dd93edd72d9bac84ea.png": _novebaGroup793,
+  "72d065f8848495759ea8824b2d89d8c8f0704b66.png": _novebaPhone1,
+  "9c653bf665fa196c05ac7760918e48222065bdae.png": _novebaPhone21,
+  "bd0e56bf6e9d68376cc46189a29fc1da338d15a3.png": _novebaGroup798bg,
+  "709559c3867f64ae97fdca04adceaa5db15ebf11.png": _novebaPhone42,
+  "3fd12a56b4a3168f2bd65408167228bafc426a7c.png": _novebaPhone14,
+  "85239427b6dbe969f2e520a588f438385dcd1708.png": _novebaPhone33,
+  "cd508c92d100afca7d7e6acb61413601dadc5f94.png": _novebaPhone4,
+  "22bd0fa3c73d90e3686510bfb4cd9eae020e6296.png": _novebaPhone23,
+  "1b475722cf5220d3b3c6e2fe10085721b214a367.png": _novebaFrame998,
+  "1e26318f2ca2d72f9419d1c7b7419c2e0079564e.png": _novebaFrame929,
+  "40889ef8e7d9cd74cd2b43bad08a1316d2619bfc.png": _novebaFrame007,
+  "a89b705fc7b1c295c6ff04db6638fdfef9952ca7.png": _novebaPhone5,
+  "1faff870058740fa63e3182b40630b6db606b13c.png": _novebaPhone15,
+  "8f0db03076a75a2e05b34e9e310bd536412b82f2.png": _novebaFrame008,
+  "4ec7aba99419cd6d448575a03ec3e5f365155f8b.png": _novebaGroup801bg,
+  "381e36a352a3b545560b15e68554b8c011d6a07b.png": _novebaFrame507,
+  "789772cfea8b75250178b6a652557fd98d894a29.png": _novebaFrame474,
   // News
   "e52676864f1c47149204f1d37c3f696bb23e32d9.png": _e5267686,
   "cea26a6e715fc266e545b9879e44a215eaa40adb.png": _cea26a6e,
@@ -334,6 +493,99 @@ export const assetRegistry: Record<string, string> = {
   "a1f519233988bc6a6d158bc0b2d7af02025cb644.png": _a1f51923,
   "ec232279b1ec17899000f3e17ad7131b8b337c63.png": _ec232279,
   "1d598f48d7e9dd66201b8008a2a67c828fe7acb7.png": _1d598f48,
+  // Zenit FC
+  "655ac4029fdc11d7a941b930baefbf140d6fb707.png": _z655ac402,
+  "8ae5c8981592f1f670e1b51ad5c2aa9f16621d13.png": _z8ae5c898,
+  "0213f12b4617f53c17bc08ef67124214911bbf1c.png": _z0213f12b,
+  "8eabc817700ee43aac676179ed9e2a9848a62df1.png": _z8eabc817,
+  "2e77c5b04337768d03cd35a0d2ee149a49ceb51d.png": _z2e77c5b0,
+  "840caeb2ffb2b638b556796c36893087076abb16.png": _z840caeb2,
+  "699029bc8a219d4ba46968910fa6d0d0e1534f0f.png": _z699029bc,
+  "af778204e6a7cc1b1bcfcae004c1f46e345362b9.png": _zaf778204,
+  "231b6eae338caf5768008a7cf4e5554f8eb3cd10.png": _z231b6eae,
+  "20cdd3ae2afb89c113c77f03c667b23a5c84a421.png": _z20cdd3ae,
+  "d235eac6f61e4c1f966837870748509c29f9e852.png": _zd235eac6,
+  "cd9c95aff32db56a36975fb1d717167d5c711dea.png": _zcd9c95af,
+  "8fca6e7b103c444a45d928e145fe04b996f425d8.png": _z8fca6e7b,
+  "2865f9ccbac1b64ce34bdc206a3010caa6b3e10b.png": _z2865f9cc,
+  "5dcb798cac9ca4beecaf9c6da84b7fd988fc1e5d.png": _z5dcb798c,
+  "cd5c1f84d6e539b6bee121b8d54ab1568011d344.png": _zcd5c1f84,
+  "217a6c2cc8c1ca33ce74c6906703d1fc8ae95228.png": _z217a6c2c,
+  "9ec02cc86230e25fa78d3c47e38987d05b042c74.png": _z9ec02cc8,
+  "e63b11cb451488e485cf884882de2bd7af1ece7d.png": _ze63b11cb,
+  "479aa9bac67cf71c2b79a7aec5be086705052273.png": _z479aa9ba,
+  "8cd4ded4449978fe794cf04562235c89bec78b28.png": _z8cd4ded4,
+  "634c54a329f85340cb379da8ca6d57fb40af3b45.png": _z634c54a3,
+  "054d473edeb3dbbc2365255720593fa887a690fb.png": _z054d473e,
+  "daf24e5d3cc6231165c79ad96f2d1e1d59aa0561.png": _zdaf24e5d,
+  "2aef5c6f431603bd265ab7e510c14121178fd618.png": _z2aef5c6f,
+  "8f8cc89d8d9b954e29b97af7cac24f81521f79e8.png": _z8f8cc89d,
+  "413ed18d0ae95659d6c66722882fe12b7b1112cc.png": _z413ed18d,
+  "841edacf9990dcd139fb87201d6807fe954cd8f6.png": _z841edacf,
+  "39ee3297bcfacc4481271b96f761771a6b116133.png": _z39ee3297,
+  "e9c3fa703018586787bd90976410abe558722efd.png": _ze9c3fa70,
+  "6cbf34866a9e5d9b56f9a1f0e25edfce06320d57.png": _z6cbf3486,
+  "e1665213e77ab6f2a929bfcb36e3b0a8f0058305.png": _ze1665213,
+  "3182b654bec731ac3124445e978365f54e840847.png": _z3182b654,
+  "7108c1cf0acb939b8e6090bbe87185a1b31f6858.png": _z7108c1cf,
+  "66a06f125681119e08505e59eea09ddfcbdb728c.png": _z66a06f12,
+  "9a12df434db7c919d80149c62a4d467fe885385a.png": _z9a12df43,
+  "3759d80adced0f78111de928027a0dd2bf628147.png": _z3759d80a,
+  "cbdfd9bd535731b8730d09734fc90b045c7fe620.png": _zcbdfd9bd,
+  "07f1eaa030c95a7ee4ffc09348df54f2ec762693.png": _z07f1eaa0,
+  "db095ddf9a3246a662f52a275ab05925470ab4d2.png": _zdb095ddf,
+  "7658e12427f4aa10ea0c29786a718ce3b4bdd89f.png": _z7658e124,
+  // MTS Web Services [Cloud]
+  "4becd37c4877176b60ae671d73659d94e2a7f992.png": _mts01,
+  "10ad1fa710b29b909003a179fc901d9225805cfe.png": _mts02,
+  "4aad801d92ec48b131f2c0db1785e02086f28e1a.png": _mts03,
+  "927a5ee7fc629b27635663f81bc409ccce095282.png": _mts04,
+  "d89a24611e944dc38e15bda908644bbe3c0ae23e.png": _mts05,
+  "60d8e7f9fa583d7f04d95d53fa9d0d9206549fcf.png": _mts06,
+  "abfc3367ded30ff27b8e46c5a8d546afc3b02915.png": _mts07,
+  "adb8df09a88a0387767bf7b6588b3ad11c9808ac.png": _mts08,
+  "0206981a6c7d2b153216ce739293c0bfabbc3010.png": _mts09,
+  "975737d90ac4661b00303d490b231b2574fba9ef.png": _mts10,
+  "e9a09f99ab883613db202a8ea3c34164a2da17e6.png": _mts11,
+  "de6f5923b705ef8f4857a29c21a5c6e5c133dc43.png": _mts12,
+  "a65d5b58447e9baa03d9f034cf3c7ae727f2734e.png": _mts13,
+  "db7045b90c70549f530113a4626665819615bc57.png": _mts14,
+  "bdfc6ee7291b266a5d19aa77b1eab2a25e7cb14f.png": _mts15,
+  "cf615c68ae73016da41278b8bd8eb5ed94b2b4d3.png": _mts16,
+  "9930516db6d32c8f4b24274ffb0f17910d90bcfe.png": _mts17,
+  "59b6d6220a2080e9c53f317e980b8368343f906a.png": _mts18,
+  "34ffb293694d3fc39b8fe7cb23f5fcdc30231801.png": _mts19,
+  // HomePage
+  "29117de79a1c89ab4964cad7c1cde1f057c58851.png": _home_avatar,
+  "d7d4dcbdc8666c8ccdc838ba7d98c0a20a302c38.png": _home_gid_bg,
+  "bad2c28f2d9889ae722bf4a7a81f17de992bfe28.png": _home_gid_phone,
+  "12b4d4575123aa4f8cdffebbf7a4d19b2199e31d.png": _home_noveba_bg,
+  "20c4772bb34ccd16bae8384c3e65c598cc330f1e.png": _home_noveba_ph,
+  "001d10671b8709574c548455c832716daba56f5c.png": _home_gpid_phone,
+  "30009fa3b20fa672955ba9f55ca66aee57bcaa5a.png": _home_zenit_bg,
+  "97d6397b9d2d57eced5a53d8a5e269dd752a82b0.png": _home_mts_hardware,
+  "48d36a8ee3e4cc52bd163a992c47b1fd3a826acf.png": _home_mts_tablet,
+  // GID Hub
+  "caab6aafb235ada65bc1241ef00f897e6e348892.png": _gidhub01,
+  "2df0891ec058c27c0e54e4a6f53865471f8ffe50.png": _gidhub02,
+  "b3a88e0e2e236f7d05dad51f8ae167e43504cca6.png": _gidhub03,
+  "2c4764a11e89e180cf9434518f0bbe6776dc2853.png": _gidhub04,
+  "21c70193e7830536fbdf25c92b6779f19577f1ec.png": _gidhub05,
+  "d8b8423d048f34ab733cca2d0acab5f08c303139.png": _gidhub06,
+  "acc2db208484f74a7b627817ba04b9a4076ca968.png": _gidhub07,
+  "da4db3a8bedcd65032ab6368dad6145b80240a7a.png": _gidhub08,
+  "6868ce49a85d8081b9ce1ca85c583c1162798f79.png": _gidhub09,
+  "17c3a4ffac1b493bd667947b61da760538ac4b90.png": _gidhub10,
+  "48d9902acca5e21990e274d6b1e07792f766e1a6.png": _gidhub11,
+  "369e627f9de06951e1776bedb39e6b928ea31824.png": _gidhub12,
+  "66a9dfae2361457443436ad231292e51424077cd.png": _gidhub13,
+  "01024713894e2fbdb057ec21ea58ab4c5f3deba6.png": _gidhub14,
+  "b746da9489025ebcd3bc353f0932fa475c9cf9f1.png": _gidhub15,
+  // MTS mobile bg
+  "f5f60b93af9977b89f8fbde56fc5705d0c16fc59.png": _mts_mobile_bg,
+  // GID Hub home card
+  "432003c659d71f49ca9b902ae734e4f8640fe8ea.png": _gidhub_home_bg,
+  "67021368ca94ceaaf393ddf959c47ca678b4b487.png": _gidhub_home_tablet,
 };
 
 export const TOTAL_ASSETS = Object.keys(assetRegistry).length;

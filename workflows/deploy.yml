@@ -18,6 +18,9 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   # ── 1. Build ─────────────────────────────────────────────────────────────────
   build:
@@ -25,6 +28,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      # ── Fetch latest asset map from Supabase so images always load ────────
+      # The asset-map.json is populated once via the /migrate page migration
+      # runner.  Every subsequent deploy fetches the current map automatically
+      # so no manual re-migration is needed after code changes.
+      - name: Fetch asset map from Supabase
+        run: |
+          echo "Fetching asset map from Supabase..."
+          curl -sf \
+            -H "Authorization: Bearer ${{ vars.SUPABASE_ANON_KEY }}" \
+            "${{ vars.SUPABASE_URL }}/functions/v1/make-server-de62407f/assets/export-json" \
+            -o src/asset-map.json \
+          && echo "✓ asset-map fetched: $(wc -c < src/asset-map.json) bytes" \
+          || echo "⚠ fetch failed – using committed asset-map.json"
+        continue-on-error: true
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -38,18 +56,13 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build
         run: pnpm build
         env:
-          # Set VITE_BASE to '/' if this repo is published at
-          # username.github.io (root domain), or to '/repo-name/' if it is
-          # published at username.github.io/repo-name/.
-          #
-          # Configure via:  GitHub repo → Settings → Variables → Actions
-          # Variable name:  VITE_BASE   (e.g. "/portfolio/")
-          # Defaults to '/' if the variable is not set.
+          # Set VITE_BASE to '/Portfolio/' in GitHub repo:
+          # Settings → Variables → Actions → VITE_BASE = /Portfolio/
           VITE_BASE: ${{ vars.VITE_BASE || '/' }}
 
       - name: Setup Pages

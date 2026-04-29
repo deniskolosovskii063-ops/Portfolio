@@ -12,6 +12,7 @@ import { motion } from 'motion/react';
 import { BlurReveal } from './blur-reveal';
 import { fixText } from '../utils/fixText';
 import svgPaths from '../../imports/svg-0r44py53iu';
+import { CaseStatsGrid } from './case-stats';
 
 // ── Images ────────────────────────────────────────────────────────────────────
 import imgIPhone17Pro             from 'figma:asset/337264847ce68dbed86bd3a70cda0b66094f870c.png';
@@ -63,14 +64,19 @@ import imgAch30 from 'figma:asset/44d012bfdc43f4d8488da4a47c4e801388320e82.png';
 import imgAch31 from 'figma:asset/9305a95552fd76d66a8d58346d2076c0b33e9e41.png';
 import imgAch32 from 'figma:asset/45e3058076d46e843d78f061a221b798bb0fc0ec.png';
 import imgAch33 from 'figma:asset/93ca33be4d45388eebb93d9eaaa8d49a936bfc3c.png';
-// Channels iPhones (new, from Frame2147222998-50-149)
-import imgChanIPhone1             from 'figma:asset/7d94d5b9ecf39904f5179e49e3d9f9f9fe1727c5.png';
-import imgChanIPhone2             from 'figma:asset/3017883a6122368c771cff547f694fec29b96e0e.png';
-import imgChanIPhone3             from 'figma:asset/a4ca2e944cd3523072d39b811371e831ee647c80.png';
-// Comment screens
-import imgAuthMobile              from 'figma:asset/a51e244d6112e3a67d86ab6d0eb54b45cbddf73f.png';
-import imgAuthMobile1             from 'figma:asset/623b9f0ed273bba82496e63ff865dab2a64e1aa8.png';
-import imgAuthMobile2             from 'figma:asset/080f97b97aec3d9940070787029dc53b43dae079.png';
+// Comment screens — 3-in-a-row (Frame2147223001-96-11326)
+import imgCommentPhone1 from 'figma:asset/5f93c3d6f1bead2155ad2a1d564f5aa81da3c30c.png'; // left  437×878
+import imgCommentPhone2 from 'figma:asset/aa1292f239c052f48da65c147f9c0811757f021f.png'; // center 455×877
+import imgCommentPhone3 from 'figma:asset/e39c351f56fb4305c617f6263b62df6206157857.png'; // right  437×878
+// Channels phones + backgrounds (Frame2147223001)
+import imgChanPhone1 from 'figma:asset/8fb3551320b3836712d8f844d464ce76a912e491.png'; // top single — Каналы list
+import imgChanPhone2 from 'figma:asset/1e02c827ce713a51ed6ec070312b35948db67d40.png'; // pair-1 left
+import imgChanPhone3 from 'figma:asset/a1552e9b512f32c4064a95503e74780a7eb7e8ec.png'; // pair-1 right
+import imgChanPhone4 from 'figma:asset/b696116eb88ca54c5c7529edc95fa18f808be026.png'; // pair-2 left
+import imgChanPhone5 from 'figma:asset/24d43030041749a1dc31092471b8e3e4c9d24783.png'; // pair-2 right
+import imgChanPhone6 from 'figma:asset/2c5f9f56e3f559a5e12acc9f4e286492c7177246.png'; // bottom single — comment
+import imgChanBg1    from 'figma:asset/379b4c1b4d3f9c1aaa8f550d882edbbb2f63e6e3.png'; // woman — left bg
+import imgChanBg2    from 'figma:asset/73d74793fd364aef15bf004e8b0f07d7af55edf6.png'; // man   — right bg
 // Blogs iPhones
 import imgIPhone10                from 'figma:asset/2e8d673fc189d6a5968a3de0ee1e18fc30fe53f6.png';
 import imgIPhone11                from 'figma:asset/5b8bcae31de335a7584d769ae05d380b2e1a6178.png';
@@ -266,20 +272,31 @@ function Phone({ src, delay = 0, rounded = '30px' }: { src: string; delay?: numb
 }
 
 // ── Mockup phone (image already includes device frame — no overlay added) ──────
-function PhoneMockup({ src, delay = 0, maxW = 271 }: { src: string; delay?: number; maxW?: number }) {
+// Uses a div wrapper with explicit aspectRatio so IntersectionObserver always
+// sees a non-zero element even before the image loads.
+function PhoneMockup({
+  src, delay = 0, maxW = 271, ar = '475 / 924',
+}: { src: string; delay?: number; maxW?: number; ar?: string }) {
   const isMobile = useIsMobile();
   return (
-    <motion.img
-      alt=""
-      className="shrink-0 pointer-events-none h-auto"
-      style={{ width: isMobile ? '90vw' : `clamp(140px, ${((maxW / 1444) * 100).toFixed(2)}vw, ${maxW}px)` }}
-      src={src}
+    <motion.div
+      className="relative shrink-0"
+      style={{
+        width: isMobile ? '88vw' : `clamp(140px, ${((maxW / 1444) * 100).toFixed(2)}vw, ${maxW}px)`,
+        aspectRatio: ar,
+      }}
       variants={fadeScale}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 1.0, delay, ease: springEase }}
-    />
+    >
+      <img
+        alt=""
+        className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+        src={src}
+      />
+    </motion.div>
   );
 }
 
@@ -315,7 +332,7 @@ export function GIDContent() {
     <div className="relative mx-auto flex flex-col gap-[60px] sm:gap-[120px] items-center py-8 sm:py-[60px] w-full px-4 sm:px-0 sm:w-[1444px] overflow-x-clip">
 
 
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ════════════════════════════���═══════════════════════════════════════
           HERO
       ════════════════════════════════════════════════════════════════════ */}
       <div className="content-stretch flex flex-col gap-[48px] sm:gap-[60px] items-start relative z-10 w-full sm:w-[568px] mx-auto">
@@ -359,28 +376,12 @@ export function GIDContent() {
             {fixText('Результат работы над продуктом за 3 года:')}
           </motion.p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] sm:gap-x-[32px] gap-y-[24px] sm:gap-y-[32px] w-full">
-            {([
-              ['420 000', '+273%', 'Сотрудников подключено'],
-              ['53 000',  '+78%',  'Пользователей в месяц'],
-              ['30+',     '+60%',  'Сервисов'],
-              ['68%',     '+35%',  'NPS приложения'],
-            ] as [string, string, string][]).map(([num, badge, label], i) => (
-              <motion.div
-                key={i}
-                className="flex flex-col gap-[8px] items-start"
-                initial={{ opacity: 0, y: 24, scale: 0.94 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.75, delay: 1.3 + i * 0.2, ease: springEase }}
-              >
-                <div className="flex gap-[8px] items-start">
-                  <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">{num}</p>
-                  <StatBadge value={badge} />
-                </div>
-                <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full">{label}</p>
-              </motion.div>
-            ))}
-          </div>
+          <CaseStatsGrid stats={[
+            { num: '420 000', label: 'Сотрудников подключено', badge: <StatBadge value="+273%" /> },
+            { num: '53 000',  label: 'Пользователей в месяц',  badge: <StatBadge value="+78%" /> },
+            { num: '30+',     label: 'Сервисов',                badge: <StatBadge value="+60%" /> },
+            { num: '68%',     label: 'NPS приложения',          badge: <StatBadge value="+35%" /> },
+          ]} />
         </motion.div>
       </div>
 
@@ -470,7 +471,7 @@ export function GIDContent() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">{fixText('Система лояльности')}</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">{fixText('Система лояльности')}</p>
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
           {fixText('Платформа ГИД включает встроенную систему мотивации сотрудников, основанную на геймификации и внутренней экономике: сотрудники получают баллы, достижения и награды, используют корпоративную валюту и могут обменивать её в магазине бонусов. ')}
           <br aria-hidden="true" /><br aria-hidden="true" />
@@ -483,7 +484,7 @@ export function GIDContent() {
 
 
 
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ══════════��═════════════════════════════════════════════════════════
           ACHIEVEMENTS — text + 2 iPhones
       ════════════════════════════════════════════════════════════════════ */}
       <motion.p
@@ -494,7 +495,7 @@ export function GIDContent() {
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
-        {fixText('В платформе ГИД реа��изован�� гибкая система достижений, которую можно настраивать через админку: ��оздавать кастомные ачивки, задавать условия их получения и привязывать их к различным активностям сотрудников. Это позв��ляет адаптир��вать систему мотивации под задачи компании и повышать вовлечённость через геймификацию.')}
+        {fixText('В платформе ГИД реа��изован�� гибкая система достижений, которую можно настраивать через админку: ��озда��ать кастомные ачивки, задавать условия их получения и привязывать их к различным активностям сотрудников. Это позв��ляет адаптир��вать систему мотивации под задачи компании и повышать вовлечённость через геймификацию.')}
       </motion.p>
 
       <div className="flex flex-wrap justify-center gap-6 sm:gap-[100px] w-full">
@@ -574,44 +575,97 @@ export function GIDContent() {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">
           {fixText('Каналы')}
         </p>
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
           {fixText('В приложении ГИД есть система каналов, аналогичная каналам в мессенджерах.')}
           <br aria-hidden="true" /><br aria-hidden="true" />
-          {fixText('В одном разделе собраны все корпоративные и пользовательские каналы, где сотрудники могут читать новости компании, подписываться на тематические сообщества и взаимодействовать с контентом.')}
+          {fixText('В одном разделе собраны все кор��оративные и пользовательские каналы, где сотрудники могут читать новости компании, подписываться на тематические сообщества и взаимодействовать с контентом.')}
           <br aria-hidden="true" /><br aria-hidden="true" />
           {fixText('Это делает приложение единым центром корпоративной коммуникации.')}
         </p>
       </motion.div>
 
-      {/* ── 3 new channel iPhones (full mockups, no extra frame) ──────── */}
-      <div className="flex flex-wrap justify-center gap-6 sm:gap-[100px] w-full items-end">
-        <PhoneMockup src={imgChanIPhone1} delay={0}    maxW={352} />
-        <PhoneMockup src={imgChanIPhone2} delay={0.12} maxW={352} />
-        <PhoneMockup src={imgChanIPhone3} delay={0.24} maxW={352} />
+      {/* ════════════════════════════════════════════════════════════════════
+          CHANNELS PHONES — new layout (Frame2147223001)
+          1 top • 2+2 pairs • comment text • 1 bottom + bg photos
+      ════════════════════════════════════════════════════════════════════ */}
+
+      {/* Phone 1 — Каналы list, single centred */}
+      <PhoneMockup src={imgChanPhone1} delay={0} maxW={509} ar="509 / 989" />
+
+      {/* Pair 1 — channel posts */}
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-[100px] w-full">
+        <PhoneMockup src={imgChanPhone2} delay={0.08} maxW={475} ar="475 / 924" />
+        <PhoneMockup src={imgChanPhone3} delay={0.2}  maxW={475} ar="475 / 924" />
       </div>
 
-      {/* ════════════════════════════════════════════════════════════════════
-          COMMENTS — text + 3 phone screens
-      ════════════════════════════════════════════════════════════════════ */}
+      {/* Pair 2 — more channel content */}
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-[100px] w-full">
+        <PhoneMockup src={imgChanPhone4} delay={0.08} maxW={475} ar="475 / 924" />
+        <PhoneMockup src={imgChanPhone5} delay={0.2}  maxW={475} ar="475 / 924" />
+      </div>
+
+      {/* ── Phone 6 — centred over bg photos ──────────────────────────────── */}
+      <div className="relative w-full flex justify-center py-[20px] sm:py-[60px]">
+        {/* Woman photo — left, desktop only */}
+        <motion.div
+          className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none"
+          style={{ width: 'clamp(180px, 28vw, 404px)', aspectRatio: '1006 / 1336' }}
+          variants={fadeScale}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.05 }}
+          transition={{ duration: 1.2, ease: springEase }}
+        >
+          <img alt="" src={imgChanBg1} className="absolute inset-0 w-full h-full object-cover pointer-events-none" />
+          <div className="absolute inset-x-0 top-0    h-[14%] bg-gradient-to-b from-black to-transparent pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-[22%] bg-gradient-to-b from-transparent to-black pointer-events-none" />
+          <div className="absolute inset-y-0 right-0  w-[18%] bg-gradient-to-l from-black to-transparent pointer-events-none" />
+        </motion.div>
+        {/* Man photo — right, desktop only */}
+        <motion.div
+          className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none overflow-hidden"
+          style={{ width: 'clamp(140px, 20vw, 292px)', aspectRatio: '643 / 869' }}
+          variants={fadeScale}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.05 }}
+          transition={{ duration: 1.2, delay: 0.12, ease: springEase }}
+        >
+          <img alt="" src={imgChanBg2} className="absolute inset-0 w-full h-full object-cover pointer-events-none" />
+          <div className="absolute inset-x-0 top-0    h-[14%] bg-gradient-to-b from-black to-transparent pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-[22%] bg-gradient-to-b from-transparent to-black pointer-events-none" />
+          <div className="absolute inset-y-0 left-0   w-[18%] bg-gradient-to-r from-black to-transparent pointer-events-none" />
+        </motion.div>
+        <div className="relative z-10">
+          <PhoneMockup src={imgChanPhone6} delay={0} maxW={444} ar="444 / 864" />
+        </div>
+      </div>
+
+      {/* Comments text */}
       <motion.p
         className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
         {fixText('В комментариях сотрудники могут обсуждать новости, отвечать на сообщения и ставить эмодзи-реакции, что делает коммуникацию внутри каналов более живой и повышает вовлечённость.')}
       </motion.p>
 
-      <div className="flex flex-wrap justify-center gap-6 sm:gap-[100px] w-full">
-        <Phone src={imgAuthMobile}  delay={0}    />
-        <Phone src={imgAuthMobile1} delay={0.12} />
-        <Phone src={imgAuthMobile2} delay={0.24} />
+      {/* 3 comment phones in a row — Frame2147223001-96-11326 */}
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-[56px] w-full">
+        <PhoneMockup src={imgCommentPhone1} delay={0}    maxW={437} ar="437 / 878" />
+        <PhoneMockup src={imgCommentPhone2} delay={0.12} maxW={455} ar="455 / 877" />
+        <PhoneMockup src={imgCommentPhone3} delay={0.24} maxW={437} ar="437 / 878" />
       </div>
+
+      {false && <span hidden={true}>
+        {fixText('В комментариях сотрудники могут обсуждат�� новости, отвечать на сообщения и ставить эмодзи-реакции, что делает коммуникацию внутри каналов более живой и повышает вовлечённость.')}
+      </span>}
 
       {/* ════════════════════════════════════════════════════════════════════
           BLOGS — text + 2 iPhones
@@ -682,7 +736,7 @@ export function GIDContent() {
         <Phone src={imgIPhone19} delay={0.36} />
       </div>
 
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ══════════════════════════════���═════════════════════════════════════
           ILLUSTRATIONS — text + grid + full-width
       ════════════════════════════════════════════════════════════════════ */}
       <BlurReveal
@@ -855,7 +909,7 @@ export function GIDContent() {
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
-        {fixText('В приложении есть внутренний магазин, где сотрудники могут покупать товары за баллы, полученные в системе лояльности. Внутреннюю валюту можно тратить на брендированные товары и предложения внутри платформы, а также использовать для получения скидок и частичной оплаты товаров и услуг у партнёров.')}
+        {fixText('В приложении есть внутренний магазин, где сотрудники могут покупать товары за баллы, полученные в системе лояльности. Внутреннюю валюту можно тратить на брендированные товары и предложения внутри платформы, а также использовать для получения скидок и частичной оплаты то��аров и услуг у партнёров.')}
       </motion.p>
 
       {/* Two Shop iPhones side-by-side */}
@@ -894,7 +948,7 @@ export function GIDContent() {
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
-        {fixText('У ГИД есть фирменный стиль для внешних коммуникаций и оффлайн событий, а каждая версия приложения отмечается большим оффлайн мероприятием с сотнями гостей.')}
+        {fixText('У ГИД есть фирменный стиль для в��ешних коммуникаций и оффлайн событий, а каждая версия приложения отмечается большим оффлайн мероприятием с сотнями гостей.')}
       </motion.p>
 
       {/* Invitation video */}

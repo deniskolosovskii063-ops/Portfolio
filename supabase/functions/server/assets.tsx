@@ -7,6 +7,7 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 
 const BUCKET_NAME = "make-de62407f-assets";
+const VIDEOS_BUCKET = "make-de62407f-videos";
 
 function getSupabaseAdmin() {
   return createClient(
@@ -35,6 +36,87 @@ export async function ensureBucket() {
       console.log(`ensureBucket: created bucket "${BUCKET_NAME}"`);
     }
   }
+}
+
+/** Idempotently create a public videos bucket (larger file size limit) */
+export async function ensureVideosBucket() {
+  const supabase = getSupabaseAdmin();
+  const { data: buckets, error: listErr } = await supabase.storage.listBuckets();
+  if (listErr) {
+    console.log("ensureVideosBucket: failed to list buckets:", listErr.message);
+    return;
+  }
+  const exists = buckets?.some((b) => b.name === VIDEOS_BUCKET);
+  if (!exists) {
+    const { error } = await supabase.storage.createBucket(VIDEOS_BUCKET, {
+      public: true,
+      fileSizeLimit: 209715200, // 200 MB
+    });
+    if (error) {
+      console.log("ensureVideosBucket: failed to create bucket:", error.message);
+    } else {
+      console.log(`ensureVideosBucket: created bucket "${VIDEOS_BUCKET}"`);
+    }
+  }
+}
+
+/** Upload a video from a remote URL to the videos bucket */
+export async function uploadVideo(
+  filename: string,
+  sourceUrl: string,
+): Promise<{ publicUrl: string } | { error: string }> {
+  const supabase = getSupabaseAdmin();
+
+  // Check if already uploaded
+  const { data: listed } = await supabase.storage
+    .from(VIDEOS_BUCKET)
+    .list("", { search: filename });
+  if (listed && listed.length > 0) {
+    const { data: urlData } = supabase.storage
+      .from(VIDEOS_BUCKET)
+      .getPublicUrl(filename);
+    console.log(`uploadVideo: "${filename}" already exists, returning cached URL`);
+    return { publicUrl: urlData.publicUrl };
+  }
+
+  let response: Response;
+  try {
+    response = await fetch(sourceUrl, { redirect: "follow" });
+    if (!response.ok) {
+      return { error: `Fetch failed: ${response.status} ${response.statusText} for ${sourceUrl.slice(0, 80)}` };
+    }
+  } catch (e) {
+    return { error: `Fetch error for ${filename}: ${String(e)}` };
+  }
+
+  const contentType = response.headers.get("content-type") || "video/mp4";
+  const arrayBuffer = await response.arrayBuffer();
+  console.log(`uploadVideo: "${filename}" fetched ${Math.round(arrayBuffer.byteLength / 1024 / 1024)}MB`);
+
+  const { error: uploadError } = await supabase.storage
+    .from(VIDEOS_BUCKET)
+    .upload(filename, arrayBuffer, {
+      contentType,
+      upsert: true,
+      cacheControl: "31536000",
+    });
+
+  if (uploadError) {
+    return { error: `Upload failed for ${filename}: ${uploadError.message}` };
+  }
+
+  const { data: urlData } = supabase.storage
+    .from(VIDEOS_BUCKET)
+    .getPublicUrl(filename);
+
+  console.log(`uploadVideo: "${filename}" uploaded successfully`);
+  return { publicUrl: urlData.publicUrl };
+}
+
+/** Build public URL for a given filename in the videos bucket */
+export function getVideoPublicUrl(filename: string): string {
+  const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+  return `${supabaseUrl}/storage/v1/object/public/${VIDEOS_BUCKET}/${filename}`;
 }
 
 /** Upload a single image from a remote URL to Storage */

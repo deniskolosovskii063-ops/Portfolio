@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
+import { AnimatedStatValue } from '../app/components/case-stats';
 import svgPaths from "./svg-249sjx1fyz";
 import imgMacBookPro1472 from "figma:asset/6efd99ee8ab026ae08302bdeea53f81901ab767e.png";
 import imgMacBookPro1441 from "figma:asset/150583aa5d12631e55d93562e8abf6e4a748cf63.png";
@@ -141,8 +142,8 @@ function Frame43() {
 
 function Frame36() {
   return (
-    <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">50+ млн</p>
+    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="50+" /> млн</p>
       <Frame43 />
     </div>
   );
@@ -152,7 +153,7 @@ function Frame() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame36 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full">{fixText('Пользователей в месяц')}</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Пользователей в месяц')}</p>
     </div>
   );
 }
@@ -168,8 +169,8 @@ function Frame44() {
 
 function Frame37() {
   return (
-    <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">4 млн</p>
+    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="4" /> млн</p>
       <Frame44 />
     </div>
   );
@@ -179,7 +180,7 @@ function Frame1() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame37 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full">{fixText('авторизаций в день')}</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('авторизаций в день')}</p>
     </div>
   );
 }
@@ -204,8 +205,8 @@ function Frame45() {
 
 function Frame38() {
   return (
-    <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">150+</p>
+    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="150+" /></p>
       <Frame45 />
     </div>
   );
@@ -215,7 +216,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame38 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full">{fixText('Подключенных партнеров')}</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Подключенных партнеров')}</p>
     </div>
   );
 }
@@ -231,8 +232,8 @@ function Frame46() {
 
 function Frame39() {
   return (
-    <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">89%</p>
+    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="89%" /></p>
       <Frame46 />
     </div>
   );
@@ -242,7 +243,7 @@ function Frame3() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame39 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full">{fixText('Конверсия в авторизацию')}</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Конверсия в авторизацию')}</p>
     </div>
   );
 }
@@ -1349,7 +1350,7 @@ function Frame17() {
       <p className="font-['TT_Interphases_Pro:DemiBold',sans-serif] leading-[21.906px] not-italic relative shrink-0 text-[#1c1c1e] text-[19.168px] text-center w-full">
         Добавьте сервис, который
         <br aria-hidden="true" />
-        хотите подключить
+        хотите под��лючить
       </p>
     </div>
   );

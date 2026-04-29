@@ -127,11 +127,13 @@
   body {
     @apply bg-background text-foreground;
     background-color: black;
+    font-family: 'Inter', sans-serif;
   }
 
   html {
     background-color: black;
     font-size: var(--font-size);
+    font-family: 'Inter', sans-serif;
   }
 
   /**
