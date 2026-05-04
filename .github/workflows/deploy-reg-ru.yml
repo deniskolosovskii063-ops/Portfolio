@@ -1,9 +1,7 @@
 name: Deploy to REG.RU
 
+# Автодеплой по push отключён после инцидента с продом — только вручную из вкладки Actions.
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
