@@ -7,8 +7,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -48,7 +46,7 @@ jobs:
       - name: Upload to REG.RU via FTP
         id: deploy_ftp
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -57,11 +55,14 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_TARGET_DIR }}
-          dangerous-clean-slate: true
+          # Инкрементальный деплой: action сравнивает state-файл и заливает только измененные файлы
+          dangerous-clean-slate: false
+          state-name: .ftp-deploy-sync-state.json
+          timeout: 600000
 
       - name: Upload to REG.RU via FTPS (fallback)
         if: steps.deploy_ftp.outcome == 'failure'
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -71,4 +72,6 @@ jobs:
           security: loose
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_TARGET_DIR }}
-          dangerous-clean-slate: true
+          dangerous-clean-slate: false
+          state-name: .ftp-deploy-sync-state.json
+          timeout: 600000
