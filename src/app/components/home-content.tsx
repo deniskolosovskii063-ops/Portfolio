@@ -953,23 +953,24 @@ export function HomeContent() {
         ════════════════════════════════════════════════════════════════ */}
         <div className="flex flex-col gap-[40px] sm:gap-[60px] w-full">
 
-          {/* ── ГИД ── */}
+          {/* ── Зенит ── */}
           <CaseCard
-            logo={<GIDLogo />}
-            description="Цифровая платформа ГИД — единое пространство взаимодействи сотрудников ГК Газпром, объединяюще 30+ сервисов, коммуникации, обучение и партнёрские предложения для работы и повседневных задач."
+            logo={<ZenitHomeLogo />}
+            description="Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте."
             stats={[
-              ['420 000', 'сотрудников подключено'],
-              ['53 000',  'пользователей в месяц'],
-              ['30+',          'Сервисов'],
-              ['68%',          'NPS приложения'],
+              ['320+',      'Уникальных экранов'],
+              ['120+',      'UI-компонентов дизайн-системы'],
+              ['20+',       'Сервисов для болельщиков'],
+              ['80 часов',  'Интервью с респондентами'],
             ]}
-            route="/GID"
-            bgImage={imgGIDBg}
-            bgVideo={GID_VIDEO_SRC}
-            phoneImage={imgGIDPhone}
-            phoneLeftPct={24.23}
-            phoneTopPct={23.69}
+            route="/zenit"
+            bgImage={imgZenitBg}
+            bgVideo={ZENIT_VIDEO_SRC}
+            phoneImage={imgZenitPhone}
+            phoneLeftPct={24.32}
+            phoneTopPct={18.45}
             phoneDeltaY={-50}
+            badge={<InProgressBadge />}
           />
 
           {/* ── Noveba ── */}
@@ -991,31 +992,30 @@ export function HomeContent() {
             phoneDeltaY={-50}
           />
 
+          {/* ── MTS Cloud ── */}
+          <MTSCaseCard />
+
           {/* ── Газпром ID ── */}
           <GazpromIDCard />
 
-          {/* ── Зенит ── */}
+          {/* ── ГИД ── */}
           <CaseCard
-            logo={<ZenitHomeLogo />}
-            description="Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте."
+            logo={<GIDLogo />}
+            description="Цифровая платформа ГИД — единое пространство взаимодействи сотрудников ГК Газпром, объединяюще 30+ сервисов, коммуникации, обучение и партнёрские предложения для работы и повседневных задач."
             stats={[
-              ['320+',      'Уникальных экранов'],
-              ['120+',      'UI-компонентов дизайн-системы'],
-              ['20+',       'Сервисов для болельщиков'],
-              ['80 часов',  'Интервью с респондентами'],
+              ['420 000', 'сотрудников подключено'],
+              ['53 000',  'пользователей в месяц'],
+              ['30+',          'Сервисов'],
+              ['68%',          'NPS приложения'],
             ]}
-            route="/zenit"
-            bgImage={imgZenitBg}
-            bgVideo={ZENIT_VIDEO_SRC}
-            phoneImage={imgZenitPhone}
-            phoneLeftPct={24.32}
-            phoneTopPct={18.45}
+            route="/GID"
+            bgImage={imgGIDBg}
+            bgVideo={GID_VIDEO_SRC}
+            phoneImage={imgGIDPhone}
+            phoneLeftPct={24.23}
+            phoneTopPct={23.69}
             phoneDeltaY={-50}
-            badge={<InProgressBadge />}
           />
-
-          {/* ── MTS Cloud ── */}
-          <MTSCaseCard />
 
           {/* ── GID Hub ── */}
           <GIDHubCard />
