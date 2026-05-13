@@ -74,7 +74,7 @@ function Frame4() {
           </div>
         </div>
       </div>
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] w-[165px]">Зенит</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] w-[165px]">Зенит</p>
     </div>
   );
 }
@@ -91,7 +91,7 @@ function Frame() {
   return (
     <div className="content-stretch flex flex-col gap-[60px] items-start relative shrink-0 w-full">
       <Frame1 />
-      <div className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте.</p>
         <p className="mb-0">&nbsp;</p>
         <p>{`Приложение позволяет следить за жизнью команды в реальном времени: получать новости, смотреть статистику игроков и матчей, следить за календарём игр, смотреть видео и пользоваться Матч-центр с подробной информацией о матчах и соперниках.  `}</p>
@@ -124,7 +124,7 @@ function Frame12() {
 function Frame3() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Раздел «Матчи», объединет расписание игр, календарь и турнирные таблицы в одном интерфейсе. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -150,7 +150,7 @@ function Frame17() {
 function Frame22() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full">Болельщик может следить за игрой в реальном времени: счёт, тайминг матча, ключевые события и составы команд. Интерфейс позволяет быстро ориентироваться в ходе игры и получать полную картину матча без необходимости переходить в сторонние сервисы.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full">Болельщик может следить за игрой в реальном времени: счёт, тайминг матча, ключевые события и составы команд. Интерфейс позволяет быстро ориентироваться в ходе игры и получать полную картину матча без необходимости переходить в сторонние сервисы.</p>
     </div>
   );
 }
@@ -158,7 +158,7 @@ function Frame22() {
 function Frame23() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full">Спроектирован детальный раздел матча, объединяющий всю ключевую информацию для болельщика: данные о игре, медиаконтент и составы команд. Пользователь может быстро купить билет, посмотреть новости и видео по матчу или изучить стартовые составы и тактическую расстановку команд.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full">Спроектирован детальный раздел матча, объединяющий всю ключевую информацию для болельщика: данные о игре, медиаконтент и составы команд. Пользователь может быстро купить билет, посмотреть новости и видео по матчу или изучить стартовые составы и тактическую расстановку команд.</p>
     </div>
   );
 }
@@ -221,7 +221,7 @@ function Frame13() {
 function Frame24() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Система лояльности с клубной картой позволяет болельщикам получать уровни (серебро, золото, платина), которые открывают различные скидки и бонусы на билеты, еду и атрибутику. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -263,7 +263,7 @@ function Frame21() {
 function Frame25() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Интерактивная карта стадиона помогает болельщикам легко ориентироваться на арене и находить нужные сервисы: еду, фан-зоны, магазины атрибутики и другие точки. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -292,7 +292,7 @@ function Frame8() {
 function Frame26() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Раздел «Медиа» объединяет весь контент клуба: новости, фото, видео и материалы Zenit-TV в одной ленте. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -331,7 +331,7 @@ function Frame18() {
 function Frame27() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Интерфейс приложения поддерживает тёмную тему, что делает использование более комфортным в вечернее время и во время матчей на стадионе. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -344,7 +344,7 @@ function Frame27() {
 function Frame28() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Раздел Match Day объединяет все сервисы и активности, доступные болельщику в день матча на стадионе. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -381,7 +381,7 @@ function Frame11() {
 function Frame30() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Раздел «Блоги» — это пространство для общения болельщиков внутри приложения. Пользователи могут публиковать посты, делиться мнениями о матчах, обсуждать новости клуба и взаимодействовать с другими фанатами через комментарии и реакции. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -410,7 +410,7 @@ function Frame10() {
 function Frame31() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Раздел магазина позволяет болельщикам покупать официальную атрибутику клуба прямо в приложении. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -439,7 +439,7 @@ function Frame7() {
 function Frame32() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-[568px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         {`Раздел «Сервисы» объединяет все дополнительные возможности приложения в одном месте. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />

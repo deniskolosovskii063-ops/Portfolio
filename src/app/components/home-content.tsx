@@ -615,7 +615,7 @@ function StatItem({ value, label }: { value: string; label: string }) {
   return (
     <div className="flex flex-col gap-[8px] flex-1 min-w-0">
       {/* Animated number */}
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         <AnimatedStatValue value={value} />
       </p>
       {/* Grey label — half line-height on mobile */}

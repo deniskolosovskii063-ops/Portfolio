@@ -237,7 +237,7 @@ function useIsMobile() {
 function StatBadge({ value }: { value: string }) {
   return (
     <div className="bg-gradient-to-b flex from-[#c8ffab] from-[20%] items-center justify-center px-[6px] py-[6px] relative rounded-[24px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.16)] shrink-0 to-[#2e8600]">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-none not-italic text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">{value}</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-none not-italic text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">{value}</p>
       <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-1px_4px_0px_white]" />
     </div>
   );

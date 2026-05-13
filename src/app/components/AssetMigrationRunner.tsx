@@ -191,7 +191,7 @@ export function AssetMigrationRunner() {
       {/* Header */}
       <div className="flex items-center justify-between gap-3">
         <span
-          className="text-xs font-semibold tracking-wide"
+          className="text-xs font-normal tracking-wide"
           style={{ color: '#fff', fontFamily: 'Inter, sans-serif' }}
         >
           {progress.status === 'running' && '⬆ Uploading to Supabase'}
@@ -270,7 +270,7 @@ export function AssetMigrationRunner() {
               borderRadius: 8,
               padding: '7px 12px',
               fontSize: 12,
-              fontWeight: 600,
+              fontWeight: 400,
               cursor: 'pointer',
               fontFamily: 'Inter, sans-serif',
               textAlign: 'left',

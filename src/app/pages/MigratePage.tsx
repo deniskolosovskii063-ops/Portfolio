@@ -409,7 +409,7 @@ export default function MigratePage() {
   const btnStyle = (bg: string, off = false): React.CSSProperties => ({
     padding: '0 28px', height: 42, borderRadius: 8, border: 'none',
     background: off ? '#1a1a1a' : bg, color: off ? '#444' : '#fff',
-    fontFamily: 'monospace', fontSize: 13, fontWeight: 700,
+    fontFamily: 'monospace', fontSize: 13, fontWeight: 400,
     cursor: off ? 'not-allowed' : 'pointer', opacity: off ? 0.5 : 1,
     display: 'inline-flex', alignItems: 'center', gap: 8,
     transition: 'opacity .15s, background .15s',
@@ -421,7 +421,7 @@ export default function MigratePage() {
 
         {/* ── Header ─────────────────────────────────────────────────────────── */}
         <div style={{ marginBottom: 24 }}>
-          <h1 style={{ fontSize: 20, fontWeight: 700, color: '#fff', margin: '0 0 4px' }}>
+          <h1 style={{ fontSize: 20, fontWeight: 400, color: '#fff', margin: '0 0 4px' }}>
             🚀 One-Click Deploy
           </h1>
           <p style={{ color: '#555', fontSize: 13, margin: '0 0 4px' }}>
@@ -492,7 +492,7 @@ export default function MigratePage() {
                 <span style={{ color: '#4ade80' }}>✓ {webpOk}</span> &nbsp;
                 {webpErr > 0 && <span style={{ color: '#f87171' }}>✗ {webpErr}</span>}
               </span>
-              <span style={{ color: phaseColor[phase], fontWeight: 700 }}>
+              <span style={{ color: phaseColor[phase], fontWeight: 400 }}>
                 {phase === 'webp' ? phaseLabel['webp'] : `WebP: ${webpOk}/${webpTotal}`}
               </span>
             </div>
@@ -516,7 +516,7 @@ export default function MigratePage() {
                 <span style={{ color: '#60a5fa' }}>⟳ {assetsSkip}</span> &nbsp;
                 <span style={{ color: '#f87171' }}>✗ {assetsErr}</span>
               </span>
-              <span style={{ color: phaseColor[phase], fontWeight: 700 }}>
+              <span style={{ color: phaseColor[phase], fontWeight: 400 }}>
                 {phaseLabel[phase]}
               </span>
             </div>
@@ -570,7 +570,7 @@ export default function MigratePage() {
                     </span>
                     <span style={{
                       fontSize: 11, padding: '0 4px', minWidth: 46, textAlign: 'right', flexShrink: 0,
-                      color: LC[entry.level], lineHeight: '20px', fontWeight: entry.level === 'head' ? 700 : 400,
+                      color: LC[entry.level], lineHeight: '20px', fontWeight: 400,
                     }}>
                       {entry.level}
                     </span>
