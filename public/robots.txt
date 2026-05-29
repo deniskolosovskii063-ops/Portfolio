@@ -1,4 +1,11 @@
 User-agent: *
 Disallow: /
 
-# This site is a private portfolio — not intended for public indexing.
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
