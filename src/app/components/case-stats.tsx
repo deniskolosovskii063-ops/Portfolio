@@ -83,7 +83,7 @@ function CaseStatItem({ num, label, badge }: CaseStat) {
         {badge}
       </div>
       {/* Grey label */}
-      <p className="font-['Lebowski',sans-serif] font-normal not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] leading-[14px] sm:leading-[28px]">
+      <p className="font-['Inter:Regular',sans-serif] font-normal not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] leading-[14px] sm:leading-[28px]">
         {fixText(label)}
       </p>
     </div>

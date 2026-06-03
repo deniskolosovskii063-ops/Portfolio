@@ -21,7 +21,7 @@ export default function Frame() {
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIPhone17ProDeepBluePortrait} />
         </div>
       </div>
-      <p className="absolute font-['Lebowski',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[-0.56px] tracking-[-0.2px] w-[568px]">В приложении ГИД есть сервис новостей, где в одной ленте объединяются новости компании, материалы редакции и мировые новости из открытых источников. Контент агрегируется и персонализируется с помощью рекомендательной системы на основе дата-решений ГИД, формируя для каждого пользователя актуальную новостную ленту.</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[-0.56px] tracking-[-0.2px] w-[568px]">В приложении ГИД есть сервис новостей, где в одной ленте объединяются новости компании, материалы редакции и мировые новости из открытых источников. Контент агрегируется и персонализируется с помощью рекомендательной системы на основе дата-решений ГИД, формируя для каждого пользователя актуальную новостную ленту.</p>
     </div>
   );
 }

@@ -52,7 +52,7 @@ function Frame11() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <Logo />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] w-[165px]">ГИД Hub</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] w-[165px]">ГИД Hub</p>
     </div>
   );
 }
@@ -69,7 +69,7 @@ function Frame() {
   return (
     <div className="content-stretch flex flex-col gap-[60px] items-start relative shrink-0 w-full">
       <Frame2 />
-      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">ГИД Hub — платформа, объединяющая маркетплейс API-решений и конструктор виджетов, позволяющая компаниям быстро интегрировать цифровые сервисы в свои продукты без разработки.</p>
         <p className="mb-0">&nbsp;</p>
         <p className="mb-0">Платформа позволяет бизнесу подключать готовые сервисы через API или SDK, размещать их на своих площадках и запускать новые функции в веб-сайтах, личных кабинетах и мобильных приложениях. Благодаря единой библиотеке виджетов компании могут ускорять запуск продуктов и получать дополнительную выручку через кросс-продажи внутри экосистемы.</p>
@@ -91,7 +91,7 @@ function Frame8() {
 function Frame1() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">Центральный элемент платформы — каталог цифровых сервисов, где компании могут находить готовые API и виджеты для интеграции в свои продукты.</p>
         <p className="mb-0">&nbsp;</p>
         <p className="mb-0">Каждое решение публикуется поставщиком, проходит модерацию и становится доступным другим участникам платформы. В каталоге представлены сервисы разных категорий: платежи, подписки, медиа, безопасность, транспорт и другие цифровые продукты.</p>
@@ -113,7 +113,7 @@ function Frame9() {
 function Frame3() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">В платформе реализован no-code конструктор, позволяющий компаниям создавать интерактивные виджеты без разработки.</p>
         <p className="mb-0">&nbsp;</p>
         <p>Пользователь собирает интерфейс из готовых компонентов, настраивает логику и подключает API из каталога. Готовый JSON-виджет можно быстро интегрировать на сайт, в личный кабинет или мобильное приложение.</p>
@@ -133,7 +133,7 @@ function Frame14() {
 function Frame4() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">Для каждого сервиса в каталоге была спроектирована детальная карточка, где пользователь может изучить возможности API, условия использования и подключить сервис.</p>
         <p className="mb-0">&nbsp;</p>
         <p>Карточка содержит описание продукта, список доступных методов API, информацию о поставщике и интерактивный виджет предпросмотра.</p>
@@ -153,7 +153,7 @@ function Frame16() {
 function Frame5() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full">Также реализована гибкая система тарифов, позволяющая выбирать подходящий план в зависимости от объёма запросов, количества лицензий и подключаемых модулей. Это позволяет компаниям масштабировать использование API по мере роста нагрузки.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full">Также реализована гибкая система тарифов, позволяющая выбирать подходящий план в зависимости от объёма запросов, количества лицензий и подключаемых модулей. Это позволяет компаниям масштабировать использование API по мере роста нагрузки.</p>
     </div>
   );
 }
@@ -169,7 +169,7 @@ function Frame15() {
 function Frame6() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">Разработан раздел аналитики, позволяющий отслеживать использование API, количество транзакций и финансовые показатели платформы.</p>
         <p className="mb-0">&nbsp;</p>
         <p>Панель показывает ключевые метрики по проектам, динамику потребления API и объём продаж с возможностью фильтрации по периодам.</p>
@@ -189,7 +189,7 @@ function Frame17() {
 function Frame7() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">В платформу интегрирован чат поддержки, позволяющий пользователям быстро получать помощь по интеграции API и работе сервисов.</p>
         <p className="mb-0">&nbsp;</p>
         <p>Чат доступен прямо внутри интерфейса платформы и поддерживает переписку, уведомления и отправку файлов.</p>

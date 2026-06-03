@@ -127,7 +127,7 @@
   body {
     @apply bg-background text-foreground;
     background-color: black;
-    font-family: 'Lebowski', 'Inter', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-weight: 400;
     font-variation-settings: normal;
     -webkit-font-smoothing: antialiased;
@@ -136,7 +136,7 @@
   html {
     background-color: black;
     font-size: var(--font-size);
-    font-family: 'Lebowski', 'Inter', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-weight: 400;
     font-variation-settings: normal;
     -webkit-font-smoothing: antialiased;

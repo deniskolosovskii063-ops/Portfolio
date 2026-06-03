@@ -111,7 +111,7 @@ function FadeImage({
 function TextBlock({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   return (
     <motion.div
-      className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px] whitespace-pre-wrap"
+      className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px] whitespace-pre-wrap"
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
@@ -147,7 +147,7 @@ export function MTSContent() {
           initial={{ opacity: 0, y: 22, filter: 'blur(10px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 1.0, delay: 0.45, ease: smoothEase }}
-          className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap"
+          className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap"
         >
           <p className="mb-0">
             {fixText('MTS Web Services (MWS) — технологическое подразделение МТС, создающее облачные платформы, AI-сервисы и инструменты для разработки цифровых продуктов бизнеса. Платформа объединяет инфраструктурные сервисы, работу с данными, инструменты разработки и решения для построения масштабируемых цифровых систем.')}

@@ -70,7 +70,7 @@ export default function Frame() {
   return (
     <div className="bg-black relative size-full">
       <Frame3 />
-      <p className="absolute font-['Lebowski',sans-serif] font-normal leading-[28px] left-[436px] not-italic text-[20px] text-white top-[43px] tracking-[-0.2px] w-[568px]">У ГИД есть фирменный стиль для внешних коммуникаций и оффлайн событий, а каждая версия приложения отмечается большим оффлайн мероприятием с сотнями гостей.</p>
+      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[28px] left-[436px] not-italic text-[20px] text-white top-[43px] tracking-[-0.2px] w-[568px]">У ГИД есть фирменный стиль для внешних коммуникаций и оффлайн событий, а каждая версия приложения отмечается большим оффлайн мероприятием с сотнями гостей.</p>
     </div>
   );
 }

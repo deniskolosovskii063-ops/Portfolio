@@ -192,7 +192,7 @@ export function AssetMigrationRunner() {
       <div className="flex items-center justify-between gap-3">
         <span
           className="text-xs font-normal tracking-wide"
-          style={{ color: '#fff', fontFamily: "'Lebowski', Inter, sans-serif" }}
+          style={{ color: '#fff', fontFamily: 'Inter, sans-serif' }}
         >
           {progress.status === 'running' && '⬆ Uploading to Supabase'}
           {progress.status === 'done' && '✓ Migration complete'}
@@ -239,7 +239,7 @@ export function AssetMigrationRunner() {
               color: 'rgba(255,255,255,0.5)',
               fontSize: 11,
               margin: 0,
-              fontFamily: "'Lebowski', Inter, sans-serif",
+              fontFamily: 'Inter, sans-serif',
             }}
           >
             {progress.done} / {progress.total} изображений
@@ -256,7 +256,7 @@ export function AssetMigrationRunner() {
               color: 'rgba(255,255,255,0.5)',
               fontSize: 11,
               margin: 0,
-              fontFamily: "'Lebowski', Inter, sans-serif",
+              fontFamily: 'Inter, sans-serif',
             }}
           >
             {progress.done} / {TOTAL_ASSETS} загружено в Supabase CDN
@@ -272,7 +272,7 @@ export function AssetMigrationRunner() {
               fontSize: 12,
               fontWeight: 400,
               cursor: 'pointer',
-              fontFamily: "'Lebowski', Inter, sans-serif",
+              fontFamily: 'Inter, sans-serif',
               textAlign: 'left',
             }}
           >
@@ -283,7 +283,7 @@ export function AssetMigrationRunner() {
               color: 'rgba(255,255,255,0.3)',
               fontSize: 10,
               margin: 0,
-              fontFamily: "'Lebowski', Inter, sans-serif",
+              fontFamily: 'Inter, sans-serif',
               lineHeight: 1.4,
             }}
           >

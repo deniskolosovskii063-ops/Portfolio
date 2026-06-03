@@ -82,7 +82,7 @@ function Frame63() {
   return (
     <div className="bg-[#181716] content-stretch flex h-[60px] items-center justify-center px-[24px] py-[10px] relative rounded-[1000px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#2e2d2d] border-solid inset-0 pointer-events-none rounded-[1000px]" />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Мой телеграм</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Мой телеграм</p>
     </div>
   );
 }
@@ -102,7 +102,7 @@ function Frame77() {
       <div className="relative shrink-0 size-[56px]" data-name="Vector">
         <img alt="" className="absolute block max-w-none size-full" height="56" src={imgVector} width="56" />
       </div>
-      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content] whitespace-pre-wrap">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content] whitespace-pre-wrap">
         <p className="mb-0">
           Привет, я Денис — продуктовый дизайнер.
           <br aria-hidden="true" />
@@ -172,7 +172,7 @@ function Frame62() {
   return (
     <div className="bg-[#181716] content-stretch flex h-[60px] items-center justify-center px-[24px] py-[10px] relative rounded-[1000px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#2e2d2d] border-solid inset-0 pointer-events-none rounded-[1000px]" />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
     </div>
   );
 }
@@ -180,7 +180,7 @@ function Frame62() {
 function Frame20() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">420 000</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">420 000</p>
     </div>
   );
 }
@@ -189,7 +189,7 @@ function Frame() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame20 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">сотрудников подключено</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">сотрудников подключено</p>
     </div>
   );
 }
@@ -197,7 +197,7 @@ function Frame() {
 function Frame21() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">53 000</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">53 000</p>
     </div>
   );
 }
@@ -206,7 +206,7 @@ function Frame1() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame21 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">пользователей в месяц</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">пользователей в месяц</p>
     </div>
   );
 }
@@ -223,7 +223,7 @@ function Frame43() {
 function Frame22() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">30+</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">30+</p>
     </div>
   );
 }
@@ -232,7 +232,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame22 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Сервисов</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Сервисов</p>
     </div>
   );
 }
@@ -240,7 +240,7 @@ function Frame2() {
 function Frame23() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">68%</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">68%</p>
     </div>
   );
 }
@@ -249,7 +249,7 @@ function Frame3() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame23 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">NPS приложения</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">NPS приложения</p>
     </div>
   );
 }
@@ -292,7 +292,7 @@ function Frame36() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px min-w-px relative self-stretch">
       <Frame38 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">Цифровая платформа ГИД — единое пространство взаимодействия сотрудников ГК Газпром, объединяющее 30+ сервисов, коммуникации, обучение и партнёрские предложения для работы и повседневных задач.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">Цифровая платформа ГИД — единое пространство взаимодействия сотрудников ГК Газпром, объединяющее 30+ сервисов, коммуникации, обучение и партнёрские предложения для работы и повседневных задач.</p>
       <Frame62 />
       <Frame61 />
     </div>
@@ -373,7 +373,7 @@ function Frame64() {
   return (
     <div className="bg-[#181716] content-stretch flex h-[60px] items-center justify-center px-[24px] py-[10px] relative rounded-[1000px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#2e2d2d] border-solid inset-0 pointer-events-none rounded-[1000px]" />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
     </div>
   );
 }
@@ -381,7 +381,7 @@ function Frame64() {
 function Frame24() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">85%</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">85%</p>
     </div>
   );
 }
@@ -390,7 +390,7 @@ function Frame4() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame24 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">конверсия в открытие счета</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">конверсия в открытие счета</p>
     </div>
   );
 }
@@ -398,7 +398,7 @@ function Frame4() {
 function Frame25() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">65 000</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">65 000</p>
     </div>
   );
 }
@@ -407,7 +407,7 @@ function Frame5() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame25 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">активных пользователей в месяц</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">активных пользователей в месяц</p>
     </div>
   );
 }
@@ -424,7 +424,7 @@ function Frame45() {
 function Frame26() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">€320 млн</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">€320 млн</p>
     </div>
   );
 }
@@ -433,7 +433,7 @@ function Frame6() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame26 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] whitespace-nowrap">объём транзакций в год</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] whitespace-nowrap">объём транзакций в год</p>
     </div>
   );
 }
@@ -441,7 +441,7 @@ function Frame6() {
 function Frame27() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">1.8 млн</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">1.8 млн</p>
     </div>
   );
 }
@@ -450,7 +450,7 @@ function Frame7() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame27 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">транзакций в месяц</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">транзакций в месяц</p>
     </div>
   );
 }
@@ -485,7 +485,7 @@ function Frame39() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px min-w-px relative self-stretch">
       <Frame40 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content] whitespace-pre-wrap">{`Noveba — британский финтех-стартап,  предоставляет e-money счета, платежные карты, SEPA-переводы и Banking-as-a-Service инфраструктуру для частных пользователей и бизнеса.`}</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content] whitespace-pre-wrap">{`Noveba — британский финтех-стартап,  предоставляет e-money счета, платежные карты, SEPA-переводы и Banking-as-a-Service инфраструктуру для частных пользователей и бизнеса.`}</p>
       <Frame64 />
       <Frame65 />
     </div>
@@ -560,7 +560,7 @@ function Frame47() {
   return (
     <div className="content-stretch flex flex-[1_0_0] gap-[12px] items-center min-h-px min-w-px relative">
       <Logo />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">Газпром ID</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">Газпром ID</p>
     </div>
   );
 }
@@ -577,7 +577,7 @@ function Frame69() {
   return (
     <div className="bg-[#181716] content-stretch flex h-[60px] items-center justify-center px-[24px] py-[10px] relative rounded-[1000px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#2e2d2d] border-solid inset-0 pointer-events-none rounded-[1000px]" />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
     </div>
   );
 }
@@ -585,7 +585,7 @@ function Frame69() {
 function Frame28() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">50+ млн</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">50+ млн</p>
     </div>
   );
 }
@@ -594,7 +594,7 @@ function Frame8() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame28 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">пользователей в месяц</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">пользователей в месяц</p>
     </div>
   );
 }
@@ -602,7 +602,7 @@ function Frame8() {
 function Frame29() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">4 млн</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">4 млн</p>
     </div>
   );
 }
@@ -611,7 +611,7 @@ function Frame9() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame29 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">авторизаций в день</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">авторизаций в день</p>
     </div>
   );
 }
@@ -628,7 +628,7 @@ function Frame48() {
 function Frame30() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">150+</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">150+</p>
     </div>
   );
 }
@@ -637,7 +637,7 @@ function Frame10() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame30 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Подключенных партнеров</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Подключенных партнеров</p>
     </div>
   );
 }
@@ -645,7 +645,7 @@ function Frame10() {
 function Frame31() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">89%</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">89%</p>
     </div>
   );
 }
@@ -654,7 +654,7 @@ function Frame11() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame31 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Конверсия в авторизацию</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Конверсия в авторизацию</p>
     </div>
   );
 }
@@ -689,7 +689,7 @@ function Frame42() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px min-w-px relative self-stretch">
       <Frame66 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">
         Газпром ID — инфраструктурная SSO-платформа, обеспечивающая единый вход в сервисы экосистемы
         <br aria-hidden="true" />
         {`и партнёрские продукты. `}
@@ -759,7 +759,7 @@ function Frame74() {
           </div>
         </div>
       </div>
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">Зенит</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">Зенит</p>
     </div>
   );
 }
@@ -767,7 +767,7 @@ function Frame74() {
 function Frame51() {
   return (
     <div className="bg-[#181716] content-stretch flex h-[40px] items-center justify-center px-[14px] py-[10px] relative rounded-[1000px] shrink-0">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] whitespace-nowrap">В разработке</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] whitespace-nowrap">В разработке</p>
     </div>
   );
 }
@@ -785,7 +785,7 @@ function Frame76() {
   return (
     <div className="bg-[#181716] content-stretch flex h-[60px] items-center justify-center px-[24px] py-[10px] relative rounded-[1000px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#2e2d2d] border-solid inset-0 pointer-events-none rounded-[1000px]" />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
     </div>
   );
 }
@@ -793,7 +793,7 @@ function Frame76() {
 function Frame32() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">320+</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">320+</p>
     </div>
   );
 }
@@ -802,7 +802,7 @@ function Frame12() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame32 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Уникальных экранов</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Уникальных экранов</p>
     </div>
   );
 }
@@ -810,7 +810,7 @@ function Frame12() {
 function Frame33() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">120+</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">120+</p>
     </div>
   );
 }
@@ -819,7 +819,7 @@ function Frame13() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame33 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">UI-компонентов дизайн-системы</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">UI-компонентов дизайн-системы</p>
     </div>
   );
 }
@@ -836,7 +836,7 @@ function Frame52() {
 function Frame34() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">20+</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">20+</p>
     </div>
   );
 }
@@ -845,7 +845,7 @@ function Frame14() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame34 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Сервисов для болельщиков</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Сервисов для болельщиков</p>
     </div>
   );
 }
@@ -853,7 +853,7 @@ function Frame14() {
 function Frame35() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">80 часов</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">80 часов</p>
     </div>
   );
 }
@@ -862,7 +862,7 @@ function Frame15() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame35 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Интервью с респондентами</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Интервью с респондентами</p>
     </div>
   );
 }
@@ -897,7 +897,7 @@ function Frame50() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px min-w-px relative self-stretch">
       <Frame73 />
-      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте.</p>
       <Frame76 />
       <Frame80 />
     </div>
