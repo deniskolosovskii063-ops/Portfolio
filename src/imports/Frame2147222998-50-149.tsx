@@ -200,7 +200,7 @@ function Frame3() {
 
 function Frame1() {
   return (
-    <div className="content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[40px] items-center mb-[-62px] not-italic relative shrink-0 text-white">
+    <div className="content-stretch flex flex-col font-['Lebowski',sans-serif] font-normal gap-[40px] items-center mb-[-62px] not-italic relative shrink-0 text-white">
       <p className="leading-[27px] min-w-full relative shrink-0 text-[32px] tracking-[-0.96px] w-[min-content]">Каналы</p>
       <p className="leading-[28px] relative shrink-0 text-[20px] tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
         {`В приложении ГИД есть система каналов, аналогичная каналам в мессенджерах. `}

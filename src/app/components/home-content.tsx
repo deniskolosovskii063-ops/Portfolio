@@ -269,7 +269,7 @@ function GazpromIDLogo() {
           </svg>
         </div>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         {'Газпром'} ID
       </p>
     </div>
@@ -301,7 +301,7 @@ function ZenitHomeLogo() {
           </div>
         </div>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         Зенит
       </p>
     </div>
@@ -323,7 +323,7 @@ function MTSCloudLogo() {
           </g>
         </svg>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         MTS Cloud
       </p>
     </div>
@@ -348,7 +348,7 @@ function GIDHubLogo() {
           </svg>
         </div>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         ГИД Hub
       </p>
     </div>
@@ -392,7 +392,7 @@ function GIDHubCard() {
         <div className="flex flex-col gap-6 lg:gap-0 lg:justify-between flex-1 w-full lg:self-stretch">
           <GIDHubLogo />
 
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[18px] lg:text-[20px] text-white tracking-[-0.2px] max-w-[560px]">
+          <p className="font-['Lebowski',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[18px] lg:text-[20px] text-white tracking-[-0.2px] max-w-[560px]">
             {fixText('ГИД Hub — маркетплейс API и виджетов для цифровых сервисов Газпрома, позволяющий подключать готовые сервисы, управлять интеграциями и создавать собственные решения через единый интерфейс.')}
           </p>
 
@@ -409,7 +409,7 @@ function GIDHubCard() {
             transition={trans}
             style={{ border: '1px solid #2e2d2d' }}
           >
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
+            <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
               Смотреть кейс
             </p>
           </motion.div>
@@ -517,7 +517,7 @@ function MTSCaseCard() {
 
           <MTSCloudLogo />
 
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[18px] lg:text-[20px] text-white tracking-[-0.2px] max-w-[560px]">
+          <p className="font-['Lebowski',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[18px] lg:text-[20px] text-white tracking-[-0.2px] max-w-[560px]">
             {fixText('MTS Cloud — облачная платформа MTS Web Services. Проектирование уравления облачной инфраструктурой: вычислительные ресурсы, хранилище, базы данных и AI-сервисы для бизнеса.')}
           </p>
 
@@ -534,7 +534,7 @@ function MTSCaseCard() {
             transition={trans}
             style={{ border: '1px solid #2e2d2d' }}
           >
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
+            <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
               Смотреть кейс
             </p>
           </motion.div>
@@ -615,11 +615,11 @@ function StatItem({ value, label }: { value: string; label: string }) {
   return (
     <div className="flex flex-col gap-[8px] flex-1 min-w-0">
       {/* Animated number */}
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         <AnimatedStatValue value={value} />
       </p>
       {/* Grey label — half line-height on mobile */}
-      <p className="font-['Inter:Regular',sans-serif] font-normal not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] leading-[14px] sm:leading-[28px]">
+      <p className="font-['Lebowski',sans-serif] font-normal not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] leading-[14px] sm:leading-[28px]">
         {fixText(label)}
       </p>
     </div>
@@ -731,7 +731,7 @@ function CaseCard({
           </div>
 
           {/* Description */}
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] max-w-[560px]">
+          <p className="font-['Lebowski',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] max-w-[560px]">
             {fixText(description)}
           </p>
 
@@ -745,7 +745,7 @@ function CaseCard({
             transition={trans}
             style={{ border: '1px solid #2e2d2d' }}
           >
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
+            <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
               Смотреть кейс
             </p>
           </motion.div>
@@ -827,7 +827,7 @@ function CaseCard({
 function InProgressBadge() {
   return (
     <div className="bg-[#181716] flex h-[36px] sm:h-[40px] items-center justify-center px-[14px] rounded-[1000px] shrink-0">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] whitespace-nowrap">
         В разработке
       </p>
     </div>
@@ -925,7 +925,7 @@ export function HomeContent() {
             initial={{ opacity: 0, y: 28, filter: 'blur(10px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 0.85, delay: 0.1, ease }}
-            className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap"
+            className="font-['Lebowski',sans-serif] font-normal leading-[1.4] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap"
           >
             <p className="mb-[28px]">
               {fixText('Привет, я Денис — продуктовый дизайнер.')}

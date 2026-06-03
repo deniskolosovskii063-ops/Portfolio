@@ -77,13 +77,13 @@ function CaseStatItem({ num, label, badge }: CaseStat) {
     <div className="flex flex-col gap-[8px] flex-1 min-w-0">
       {/* Animated number + optional badge */}
       <div className="flex items-center gap-[8px]">
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+        <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
           <AnimatedStatValue value={num} />
         </p>
         {badge}
       </div>
       {/* Grey label */}
-      <p className="font-['Inter:Regular',sans-serif] font-normal not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] leading-[14px] sm:leading-[28px]">
+      <p className="font-['Lebowski',sans-serif] font-normal not-italic text-[#868585] text-[14px] sm:text-[16px] tracking-[-0.16px] leading-[14px] sm:leading-[28px]">
         {fixText(label)}
       </p>
     </div>

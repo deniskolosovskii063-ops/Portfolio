@@ -75,7 +75,7 @@ export default function Frame() {
     <div className="bg-black relative size-full">
       <Frame1 />
       <Frame2 />
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[28px] left-[436px] not-italic text-[20px] text-white top-[4955px] tracking-[-0.2px] w-[568px]">В комментариях сотрудники могут обсуждать новости, отвечать на сообщения и ставить эмодзи-реакции, что делает коммуникацию внутри каналов более живой и повышает вовлечённость.</p>
+      <p className="absolute font-['Lebowski',sans-serif] font-normal leading-[28px] left-[436px] not-italic text-[20px] text-white top-[4955px] tracking-[-0.2px] w-[568px]">В комментариях сотрудники могут обсуждать новости, отвечать на сообщения и ставить эмодзи-реакции, что делает коммуникацию внутри каналов более живой и повышает вовлечённость.</p>
       <Frame5 />
     </div>
   );

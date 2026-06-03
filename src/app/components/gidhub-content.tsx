@@ -52,7 +52,7 @@ function GIDHubLogo() {
           </svg>
         </div>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         ГИД Hub
       </p>
     </div>
@@ -99,7 +99,7 @@ function TextBlock({ children, delay = 0 }: { children: React.ReactNode; delay?:
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.85, delay, ease: smoothEase }}
     >
-      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap">
+      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap">
         {children}
       </div>
     </motion.div>
@@ -110,7 +110,7 @@ function TextBlock({ children, delay = 0 }: { children: React.ReactNode; delay?:
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <motion.p
-      className="font-['Inter:Regular',sans-serif] font-normal text-[13px] sm:text-[14px] text-[#868585] tracking-[0.08em] uppercase"
+      className="font-['Lebowski',sans-serif] font-normal text-[13px] sm:text-[14px] text-[#868585] tracking-[0.08em] uppercase"
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
@@ -144,7 +144,7 @@ export function GIDHubContent() {
           </motion.div>
 
           <motion.div
-            className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap max-w-[568px]"
+            className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap max-w-[568px]"
             variants={fadeUp}
             transition={{ duration: 0.85, ease: smoothEase }}
           >

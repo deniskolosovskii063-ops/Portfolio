@@ -99,17 +99,17 @@ export default function Frame() {
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIPhone17ProDeepBluePortrait} />
         </div>
       </div>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[-196.56px] tracking-[-0.2px] w-[568px]">В приложении ГИД есть сервис новостей, где в одной ленте объединяются новости компании, материалы редакции и мировые новости из открытых источников. Контент агрегируется и персонализируется с помощью рекомендательной системы на основе дата-решений ГИД, формируя для каждого пользователя актуальную новостную ленту.</p>
+      <p className="absolute font-['Lebowski',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[-196.56px] tracking-[-0.2px] w-[568px]">В приложении ГИД есть сервис новостей, где в одной ленте объединяются новости компании, материалы редакции и мировые новости из открытых источников. Контент агрегируется и персонализируется с помощью рекомендательной системы на основе дата-решений ГИД, формируя для каждого пользователя актуальную новостную ленту.</p>
       <Group />
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[1900px] tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
+      <p className="absolute font-['Lebowski',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[1900px] tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
         В приложении ГИД интегрирован сервис Газпром Бонус — подписка, которая бесплатно предоставляется всем сотрудникам. Она открывает доступ к сотням скидок и специальных предложений от партнёров в различных категориях: рестораны, отдых, сервисы и товары.
         <br aria-hidden="true" />
         <br aria-hidden="true" />
         Это позволяет сотрудникам получать дополнительные привилегии и экономить на повседневных покупках и услугах.
       </p>
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[3222px] tracking-[-0.2px] w-[568px]">В приложении есть внутренний магазин, где сотрудники могут покупать товары за баллы, полученные в системе лояльности. Внутреннюю валюту можно тратить на брендированные товары и предложения внутри платформы, а также использовать для получения скидок и частичной оплаты товаров и услуг у партнёров.</p>
+      <p className="absolute font-['Lebowski',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[3222px] tracking-[-0.2px] w-[568px]">В приложении есть внутренний магазин, где сотрудники могут покупать товары за баллы, полученные в системе лояльности. Внутреннюю валюту можно тратить на брендированные товары и предложения внутри платформы, а также использовать для получения скидок и частичной оплаты товаров и услуг у партнёров.</p>
       <Group1 />
-      <p className="absolute font-['Inter:Regular',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[5074px] tracking-[-0.2px] w-[568px]">У ГИД есть фирменный стиль для внешних коммуникаций и оффлайн событий, а каждая версия приложения отмечается большим оффлайн мероприятием с сотнями гостей.</p>
+      <p className="absolute font-['Lebowski',sans-serif] font-normal leading-[28px] left-[437px] not-italic text-[20px] text-white top-[5074px] tracking-[-0.2px] w-[568px]">У ГИД есть фирменный стиль для внешних коммуникаций и оффлайн событий, а каждая версия приложения отмечается большим оффлайн мероприятием с сотнями гостей.</p>
     </div>
   );
 }

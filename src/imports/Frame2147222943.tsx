@@ -39,7 +39,7 @@ function Frame4() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <Group />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] w-[165px]">Noveba</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] w-[165px]">Noveba</p>
     </div>
   );
 }
@@ -56,7 +56,7 @@ function Frame() {
   return (
     <div className="content-stretch flex flex-col gap-[60px] items-start relative shrink-0 w-full">
       <Frame1 />
-      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
         <p className="mb-0">Noveba — финтех-платформа электронных платежей, предоставляющая e-money счета, платежные карты и инфраструктуру для управления финансовыми операциями в Европе.</p>
         <p className="mb-0">&nbsp;</p>
         <p className="mb-0">{`Платформа позволяет частным пользователям и бизнесу выполнять международные переводы, управлять счетами и выпускать платежные карты через единую цифровую банковскую инфраструктуру. `}</p>
@@ -195,14 +195,14 @@ function Frame3() {
       <div className="aspect-[3562/4096] relative shrink-0 w-full" data-name="Frame 2147223013 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame21472230131} />
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
         {`Главный экран спроектирован как центр управления финансами и разделён на два ключевых сценария — карты и счета. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
         Пользователь сразу видит баланс, активные карты, историю операций и быстрые действия: переводы, пополнение и международные платежи, что сокращает путь до основных операций до одного-двух кликов.
       </p>
       <Frame6 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
         {`Для продукта была разработана айдентика, отражающая идею простого и прозрачного управления финансами. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -212,13 +212,13 @@ function Frame3() {
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGroup21361407932} />
       </div>
       <Frame7 />
-      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
+      <div className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
         <p className="mb-0">{`Визуальная коммуникация бренда ориентирована на продвинутую digital-аудиторию и пользователей финтех-сервисов. `}</p>
         <p className="mb-0">&nbsp;</p>
         <p>В фотостиле используются динамичные ракурсы, городская архитектура и нестандартные перспективы, что подчёркивает технологичность продукта и формирует ощущение современного, уверенного и прогрессивного бренда.</p>
       </div>
       <Group3 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
         {`Была разработана полноценная дизайн-система, внедрённая во все продукты платформы. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -231,7 +231,7 @@ function Frame3() {
       <div className="h-[486px] relative shrink-0 w-[1137px]" data-name="Frame 2147222998 1">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame21472229981} />
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[568px] whitespace-pre-wrap">
         {`Для пользователей был разработан веб-личный кабинет, позволяющий управлять счетами, картами и финансовыми операциями через браузер. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />

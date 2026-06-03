@@ -217,7 +217,7 @@ export function PageLoader() {
               exit={{    opacity: 0, filter: 'blur(8px)',  y: -16 }}
               transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="text-[28px] sm:text-[32px] font-normal tracking-[-0.96px] not-italic leading-[27px]"
-              style={{ fontFamily: "'Inter', sans-serif" }}
+              style={{ fontFamily: "'Lebowski', 'Inter', sans-serif" }}
             >
               <ScramblePhrase text={PHRASES[phraseIdx]} />
             </motion.div>

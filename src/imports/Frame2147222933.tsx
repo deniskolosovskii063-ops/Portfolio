@@ -96,7 +96,7 @@ function Frame42() {
         initial={{ opacity: 0, x: 18, filter: 'blur(8px)' }}
         animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
         transition={{ duration: 0.75, delay: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"
+        className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"
       >
         {fixText('Газпром ID')}
       </motion.p>
@@ -112,7 +112,7 @@ function Frame40() {
         initial={{ opacity: 0, y: 22, filter: 'blur(10px)' }}
         animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         transition={{ duration: 1.0, delay: 0.65, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap"
       >
         <p className="mb-0">
           {fixText('Газпром ID — инфраструктурная SSO-платформа, обеспечивающая единый вход в сервисы экосистемы')}
@@ -134,7 +134,7 @@ function Frame40() {
 function Frame43() {
   return (
     <div className="bg-gradient-to-b content-stretch flex from-[#c8ffab] from-[20%] items-center justify-center p-[6px] relative rounded-[24px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.16)] shrink-0 to-[#2e8600]">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+117%</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+117%</p>
       <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-1px_4px_0px_white]" />
     </div>
   );
@@ -143,7 +143,7 @@ function Frame43() {
 function Frame36() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="50+" /> млн</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="50+" /> млн</p>
       <Frame43 />
     </div>
   );
@@ -153,7 +153,7 @@ function Frame() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame36 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Пользователей в месяц')}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Пользователей в месяц')}</p>
     </div>
   );
 }
@@ -161,7 +161,7 @@ function Frame() {
 function Frame44() {
   return (
     <div className="bg-gradient-to-b content-stretch flex from-[#c8ffab] from-[20%] items-center justify-center p-[6px] relative rounded-[24px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.16)] shrink-0 to-[#2e8600]">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+700%</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+700%</p>
       <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-1px_4px_0px_white]" />
     </div>
   );
@@ -170,7 +170,7 @@ function Frame44() {
 function Frame37() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="4" /> млн</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="4" /> млн</p>
       <Frame44 />
     </div>
   );
@@ -180,7 +180,7 @@ function Frame1() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame37 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('авторизаций в день')}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('авторизаций в день')}</p>
     </div>
   );
 }
@@ -197,7 +197,7 @@ function Frame47() {
 function Frame45() {
   return (
     <div className="bg-gradient-to-b content-stretch flex from-[#c8ffab] from-[20%] items-center justify-center p-[6px] relative rounded-[24px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.16)] shrink-0 to-[#2e8600]">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+567%</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+567%</p>
       <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-1px_4px_0px_white]" />
     </div>
   );
@@ -206,7 +206,7 @@ function Frame45() {
 function Frame38() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="150+" /></p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="150+" /></p>
       <Frame45 />
     </div>
   );
@@ -216,7 +216,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame38 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Подключенных партнеров')}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Подключенных партнеров')}</p>
     </div>
   );
 }
@@ -224,7 +224,7 @@ function Frame2() {
 function Frame46() {
   return (
     <div className="bg-gradient-to-b content-stretch flex from-[#c8ffab] from-[20%] items-center justify-center p-[6px] relative rounded-[24px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.16)] shrink-0 to-[#2e8600]">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+45%</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">+45%</p>
       <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-1px_4px_0px_white]" />
     </div>
   );
@@ -233,7 +233,7 @@ function Frame46() {
 function Frame39() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="89%" /></p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap"><AnimatedStatValue value="89%" /></p>
       <Frame46 />
     </div>
   );
@@ -243,7 +243,7 @@ function Frame3() {
   return (
     <div className="content-stretch flex w-full flex-col gap-[8px] items-start relative" data-name="Frame">
       <Frame39 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Конверсия в авторизацию')}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[14px] sm:leading-[28px] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-[#868585] tracking-[-0.16px] w-full">{fixText('Конверсия в авторизацию')}</p>
     </div>
   );
 }
@@ -287,7 +287,7 @@ function Frame41() {
         initial={{ opacity: 0, y: 18, filter: 'blur(8px)' }}
         animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         transition={{ duration: 0.85, delay: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full"
       >
         {fixText('Результат работы над продуктом за 3 года:')}
       </motion.p>
@@ -327,7 +327,7 @@ function RightLockedIcons() {
 function Frame6() {
   return (
     <div className="absolute content-stretch flex items-center left-0 top-0">
-      <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[12.435px] text-white tracking-[0.2221px] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[12.435px] text-white tracking-[0.2221px] whitespace-nowrap">
         <p className="leading-[normal]">auth.gid.ru/auth/account?authLogId=1214saseb14a56b792te23218c6a</p>
       </div>
     </div>
@@ -439,7 +439,7 @@ function FaviconTextIcons() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[10.659px] text-ellipsis text-white tracking-[0.1776px] w-[110.142px] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] overflow-hidden relative shrink-0 text-[10.659px] text-ellipsis text-white tracking-[0.1776px] w-[110.142px] whitespace-nowrap">
         <p className="leading-[normal] overflow-hidden">Газпром ID – Ваш ключ к вселенной возможностей</p>
       </div>
       <div className="relative shrink-0 size-[15.988px]" data-name="Icon - Close">
@@ -591,7 +591,7 @@ function Logo1() {
 function Text() {
   return (
     <div className="content-stretch flex flex-col gap-[6.109px] items-center justify-center relative shrink-0 w-full" data-name="text">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[18.328px] not-italic relative shrink-0 text-[#1c1c1e] text-[15.274px] text-center w-full">Вход или регистрация</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[18.328px] not-italic relative shrink-0 text-[#1c1c1e] text-[15.274px] text-center w-full">Вход или регистрация</p>
     </div>
   );
 }
@@ -600,7 +600,7 @@ function Button() {
   return (
     <div className="content-stretch flex flex-[1_0_0] h-[24.438px] items-center justify-center min-h-px min-w-px relative" data-name="Button 1">
       <div className="absolute bg-white inset-[0_0.38px_0_0] rounded-[763.684px] shadow-[0px_2.291px_6.109px_0px_rgba(0,0,0,0.12),0px_2.291px_0.764px_0px_rgba(0,0,0,0.04)]" data-name="Button" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[15.274px] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[12.22px] text-center text-ellipsis whitespace-nowrap">Телефон</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[15.274px] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[12.22px] text-center text-ellipsis whitespace-nowrap">Телефон</p>
     </div>
   );
 }
@@ -608,7 +608,7 @@ function Button() {
 function Button1() {
   return (
     <div className="content-stretch flex flex-[1_0_0] h-full items-center justify-center min-h-px min-w-px relative" data-name="Button 2">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[13.746px] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.69px] text-center text-ellipsis whitespace-nowrap">Почта</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[13.746px] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.69px] text-center text-ellipsis whitespace-nowrap">Почта</p>
     </div>
   );
 }
@@ -681,7 +681,7 @@ function Group() {
 function Container2() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-h-px min-w-px relative" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[12.22px] text-ellipsis w-full whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[12.22px] text-ellipsis w-full whitespace-nowrap">
         <p className="leading-[18.328px] overflow-hidden">+7 999 205 92 57</p>
       </div>
     </div>
@@ -715,7 +715,7 @@ function Inputs() {
 function Container3() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center max-w-[140.51787328720093px] min-w-[24.437891006469727px] pb-[2.291px] relative shrink-0" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] mb-[-1.527px] min-w-full not-italic overflow-hidden relative shrink-0 text-[13.75px] text-center text-ellipsis text-white w-[min-content] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] mb-[-1.527px] min-w-full not-italic overflow-hidden relative shrink-0 text-[13.75px] text-center text-ellipsis text-white w-[min-content] whitespace-nowrap">
         <p className="leading-[16.801px] overflow-hidden">Далее</p>
       </div>
     </div>
@@ -725,7 +725,7 @@ function Container3() {
 function Data() {
   return (
     <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-name="data">
-      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[0] min-h-px min-w-px not-italic relative text-[0px] text-[9.164px] text-[rgba(0,0,8,0.44)] text-center">
+      <p className="flex-[1_0_0] font-['Lebowski',sans-serif] font-normal leading-[0] min-h-px min-w-px not-italic relative text-[0px] text-[9.164px] text-[rgba(0,0,8,0.44)] text-center">
         <span className="leading-[12.219px]">{`Вы принимаете `}</span>
         <span className="leading-[12.219px] text-[#1c1c1e]">условия</span>
         <span className="leading-[12.219px]">
@@ -787,8 +787,8 @@ function Wrapper1() {
 function Frame27() {
   return (
     <div className="content-stretch flex flex-col gap-[4.582px] items-center leading-[13.746px] not-italic relative shrink-0 text-[10.692px] text-center text-white w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 w-full">Ваш ID — доступ к сервисам Газпрома</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 w-full">Узнать больше</p>
+      <p className="font-['Lebowski',sans-serif] font-normal relative shrink-0 w-full">Ваш ID — доступ к сервисам Газпрома</p>
+      <p className="font-['Lebowski',sans-serif] font-normal relative shrink-0 w-full">Узнать больше</p>
     </div>
   );
 }
@@ -813,7 +813,7 @@ function Wrapper() {
 function Footer() {
   return (
     <div className="-translate-x-1/2 absolute bottom-[-0.32px] content-stretch flex items-center justify-center left-[calc(50%-0.15px)] pb-[15.274px] px-[24.438px] w-[1099.705px]" data-name="footer">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[9.164px] text-[rgba(249,249,255,0.57)] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[9.164px] text-[rgba(249,249,255,0.57)] whitespace-nowrap">
         <p className="leading-[12.219px]">© 2022 — 2025 ООО «Оператор Газпром ИД»</p>
       </div>
     </div>
@@ -910,7 +910,7 @@ function Frame54() {
 function Frame16() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[21.906px] not-italic relative shrink-0 text-[#1c1c1e] text-[19.168px] text-center w-full">Расскажите о своей компании</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[21.906px] not-italic relative shrink-0 text-[#1c1c1e] text-[19.168px] text-center w-full">Расскажите о своей компании</p>
     </div>
   );
 }
@@ -936,7 +936,7 @@ function Frame10() {
 function Label() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name=".Label">
-      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Название компании</p>
+      <p className="flex-[1_0_0] font-['Lebowski',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Название компании</p>
     </div>
   );
 }
@@ -945,7 +945,7 @@ function Container5() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-h-px min-w-px relative" data-name="Container">
       <Label />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
         <p className="leading-[16.43px] overflow-hidden">ООО «Ромашка»</p>
       </div>
     </div>
@@ -968,7 +968,7 @@ function Container4() {
 function Label1() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name=".Label">
-      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">ИНН</p>
+      <p className="flex-[1_0_0] font-['Lebowski',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">ИНН</p>
     </div>
   );
 }
@@ -977,7 +977,7 @@ function Container7() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-h-px min-w-px relative" data-name="Container">
       <Label1 />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
         <p className="leading-[16.43px] overflow-hidden">7743228142</p>
       </div>
     </div>
@@ -1000,7 +1000,7 @@ function Container6() {
 function Label2() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name=".Label">
-      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Фактический адрес</p>
+      <p className="flex-[1_0_0] font-['Lebowski',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Фактический адрес</p>
     </div>
   );
 }
@@ -1009,7 +1009,7 @@ function Container9() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-h-px min-w-px relative" data-name="Container">
       <Label2 />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
         <p className="leading-[16.43px] overflow-hidden">191028, Санкт-Петербург, пр-кт Литейный, д. 51</p>
       </div>
     </div>
@@ -1048,7 +1048,7 @@ function Inputs1() {
 function Label3() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name=".Label">
-      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Номер телефона</p>
+      <p className="flex-[1_0_0] font-['Lebowski',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Номер телефона</p>
     </div>
   );
 }
@@ -1057,7 +1057,7 @@ function Container11() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-h-px min-w-px relative" data-name="Container">
       <Label3 />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
         <p className="leading-[16.43px] overflow-hidden">+7 999 123-45-67</p>
       </div>
     </div>
@@ -1080,7 +1080,7 @@ function Container10() {
 function Label4() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name=".Label">
-      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Email</p>
+      <p className="flex-[1_0_0] font-['Lebowski',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Email</p>
     </div>
   );
 }
@@ -1089,7 +1089,7 @@ function Container13() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-h-px min-w-px relative" data-name="Container">
       <Label4 />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
         <p className="leading-[16.43px] overflow-hidden">andrej.test@test.ru</p>
       </div>
     </div>
@@ -1136,7 +1136,7 @@ function Frame20() {
 function Container14() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center max-w-[125.96120071411133px] min-w-[21.906295776367188px] pb-[2.054px] relative shrink-0" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-center text-ellipsis w-[min-content] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-center text-ellipsis w-[min-content] whitespace-nowrap">
         <p className="leading-[13.691px] overflow-hidden">Назад</p>
       </div>
     </div>
@@ -1146,7 +1146,7 @@ function Container14() {
 function Container15() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center max-w-[125.96120071411133px] min-w-[21.906295776367188px] pb-[2.054px] relative shrink-0" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[10.95px] text-center text-ellipsis text-white w-[min-content] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[10.95px] text-center text-ellipsis text-white w-[min-content] whitespace-nowrap">
         <p className="leading-[13.691px] overflow-hidden">Далее</p>
       </div>
     </div>
@@ -1170,7 +1170,7 @@ function Frame14() {
   return (
     <div className="content-stretch flex flex-col gap-[16.43px] items-start p-[16.43px] relative shrink-0 w-[388.837px]">
       <Frame30 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[9.584px] text-[rgba(0,0,8,0.44)] text-center w-full whitespace-pre-wrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[9.584px] text-[rgba(0,0,8,0.44)] text-center w-full whitespace-pre-wrap">
         <span className="leading-[12.322px]">{`Продолжая, вы принимаете `}</span>
         <span className="leading-[12.322px] text-[#1c1c1e]">Пользовательское соглашение</span>
         <span className="leading-[12.322px]">
@@ -1243,7 +1243,7 @@ function Logo2() {
 function Text2() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center pt-[12.312px] relative shrink-0 w-full" data-name="text">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[19.005px] not-italic relative shrink-0 text-[#1c1c1e] text-[16.629px] text-center w-full">Войти с Газпром ID</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[19.005px] not-italic relative shrink-0 text-[#1c1c1e] text-[16.629px] text-center w-full">Войти с Газпром ID</p>
     </div>
   );
 }
@@ -1268,10 +1268,10 @@ function Header1() {
 function Container16() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-center justify-center leading-[0] max-w-[141.59218168258667px] min-h-px min-w-[24.624727249145508px] not-italic pb-[2.309px] relative text-center whitespace-nowrap" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center mb-[-1.539px] min-w-full overflow-hidden relative shrink-0 text-[12.31px] text-ellipsis text-white w-[min-content]">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center mb-[-1.539px] min-w-full overflow-hidden relative shrink-0 text-[12.31px] text-ellipsis text-white w-[min-content]">
         <p className="leading-[15.39px] overflow-hidden">Продолжить</p>
       </div>
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center mb-[-1.539px] relative shrink-0 text-[9.23px] text-[rgba(249,249,255,0.86)]">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center mb-[-1.539px] relative shrink-0 text-[9.23px] text-[rgba(249,249,255,0.86)]">
         <p className="leading-[12.312px]">+7 *** *** ** 21</p>
       </div>
     </div>
@@ -1299,7 +1299,7 @@ function Btns() {
 function Concents3() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="concents1">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[9.234px] text-[rgba(0,0,8,0.44)] text-center w-full whitespace-pre-wrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[9.234px] text-[rgba(0,0,8,0.44)] text-center w-full whitespace-pre-wrap">
         <p className="mb-0">
           <span className="leading-[12.312px]">{`Продолжая, вы принимаете `}</span>
           <span className="leading-[12.312px] text-[#1c1c1e]">Пользовательское соглашение</span>
@@ -1347,7 +1347,7 @@ function Wrapper4() {
 function Frame17() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[21.906px] not-italic relative shrink-0 text-[#1c1c1e] text-[19.168px] text-center w-full">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[21.906px] not-italic relative shrink-0 text-[#1c1c1e] text-[19.168px] text-center w-full">
         Добавьте сервис, который
         <br aria-hidden="true" />
         хотите под��лючить
@@ -1377,7 +1377,7 @@ function Frame11() {
 function Label5() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name=".Label">
-      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Название сервиса</p>
+      <p className="flex-[1_0_0] font-['Lebowski',sans-serif] font-normal leading-[10.953px] min-h-px min-w-px not-italic overflow-hidden relative text-[8.21px] text-[rgba(0,0,8,0.44)] text-ellipsis whitespace-nowrap">Название сервиса</p>
     </div>
   );
 }
@@ -1386,7 +1386,7 @@ function Container18() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-h-px min-w-px relative" data-name="Container">
       <Label5 />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-ellipsis w-full whitespace-nowrap">
         <p className="leading-[16.43px] overflow-hidden">Кофейня Ромашка</p>
       </div>
     </div>
@@ -1429,7 +1429,7 @@ function Frame21() {
 function Text4() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-name="text">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[13.691px] not-italic relative shrink-0 text-[#1c1c1e] text-[10.953px] w-full">Выберите платформу</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[13.691px] not-italic relative shrink-0 text-[#1c1c1e] text-[10.953px] w-full">Выберите платформу</p>
     </div>
   );
 }
@@ -1451,7 +1451,7 @@ function IconBox() {
 function Container19() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[1.369px] items-start justify-center min-h-px min-w-px relative" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.953px] text-ellipsis w-full">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.953px] text-ellipsis w-full">
         <p className="leading-[13.691px]">Сайт</p>
       </div>
     </div>
@@ -1533,7 +1533,7 @@ function IconBox1() {
 function Container21() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[1.369px] items-start justify-center min-h-px min-w-px relative" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.953px] text-ellipsis w-full">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.953px] text-ellipsis w-full">
         <p className="leading-[13.691px]">iOS</p>
       </div>
     </div>
@@ -1615,7 +1615,7 @@ function IconBox2() {
 function Container23() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[1.369px] items-start justify-center min-h-px min-w-px relative" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.953px] text-ellipsis w-full">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.953px] text-ellipsis w-full">
         <p className="leading-[13.691px]">Android</p>
       </div>
     </div>
@@ -1706,7 +1706,7 @@ function ImageSection() {
 
 function Container25() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col font-['Inter:Regular',sans-serif] font-normal items-start justify-center min-h-px min-w-px not-italic relative" data-name="Container">
+    <div className="content-stretch flex flex-[1_0_0] flex-col font-['Lebowski',sans-serif] font-normal items-start justify-center min-h-px min-w-px not-italic relative" data-name="Container">
       <div className="flex flex-col justify-center leading-[0] overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.953px] text-ellipsis w-full">
         <p className="leading-[16.43px]">Добавить логотип</p>
       </div>
@@ -1739,7 +1739,7 @@ function Frame22() {
 function Container26() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center max-w-[125.96120071411133px] min-w-[21.906295776367188px] pb-[2.054px] relative shrink-0" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-center text-ellipsis w-[min-content] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[10.95px] text-center text-ellipsis w-[min-content] whitespace-nowrap">
         <p className="leading-[13.691px] overflow-hidden">Назад</p>
       </div>
     </div>
@@ -1749,7 +1749,7 @@ function Container26() {
 function Container27() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center max-w-[125.96120071411133px] min-w-[21.906295776367188px] pb-[2.054px] relative shrink-0" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[10.95px] text-center text-ellipsis text-white w-[min-content] whitespace-nowrap">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] mb-[-1.369px] min-w-full not-italic overflow-hidden relative shrink-0 text-[10.95px] text-center text-ellipsis text-white w-[min-content] whitespace-nowrap">
         <p className="leading-[13.691px] overflow-hidden">Далее</p>
       </div>
     </div>
@@ -1805,7 +1805,7 @@ function IconBox3() {
 
 function Frame32() {
   return (
-    <div className="content-stretch flex font-['Inter:Regular',sans-serif] font-normal gap-[3.69px] items-start leading-[16.606px] relative shrink-0 text-[12.916px] text-[rgba(0,0,8,0.44)] whitespace-nowrap">
+    <div className="content-stretch flex font-['Lebowski',sans-serif] font-normal gap-[3.69px] items-start leading-[16.606px] relative shrink-0 text-[12.916px] text-[rgba(0,0,8,0.44)] whitespace-nowrap">
       <p className="overflow-hidden relative shrink-0 text-ellipsis">Web</p>
       <p className="relative shrink-0">•</p>
       <p className="overflow-hidden relative shrink-0 text-ellipsis">7743228142</p>
@@ -1816,7 +1816,7 @@ function Frame32() {
 function Container28() {
   return (
     <div className="content-stretch flex flex-col gap-[3.69px] items-start justify-center not-italic relative shrink-0 w-full" data-name="Container">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[18.397px] min-w-full overflow-hidden relative shrink-0 text-[#1c1c1e] text-[16.098px] text-ellipsis w-[min-content]">Кофейня Ромашка</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[18.397px] min-w-full overflow-hidden relative shrink-0 text-[#1c1c1e] text-[16.098px] text-ellipsis w-[min-content]">Кофейня Ромашка</p>
       <Frame32 />
     </div>
   );
@@ -1848,7 +1848,7 @@ function Item1() {
   return (
     <div className="content-stretch flex gap-[5.535px] items-center relative shrink-0 w-full" data-name="Item">
       <CheckCircle />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[16.606px] not-italic relative shrink-0 text-[#1c1c1e] text-[12.916px] whitespace-nowrap">Заявка отправлена</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[16.606px] not-italic relative shrink-0 text-[#1c1c1e] text-[12.916px] whitespace-nowrap">Заявка отправлена</p>
     </div>
   );
 }
@@ -1883,8 +1883,8 @@ function Frame23() {
 function Frame19() {
   return (
     <div className="content-stretch flex flex-col gap-[7.096px] items-start not-italic relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[21.906px] relative shrink-0 text-[#1c1c1e] text-[22.905px] w-full">Привязанные аккаунты</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[15.966px] relative shrink-0 text-[12.418px] text-[rgba(0,0,8,0.44)] w-full">Привязанные аккаунты и согласия на получение рассылок</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[21.906px] relative shrink-0 text-[#1c1c1e] text-[22.905px] w-full">Привязанные аккаунты</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[15.966px] relative shrink-0 text-[12.418px] text-[rgba(0,0,8,0.44)] w-full">Привязанные аккаунты и согласия на получение рассылок</p>
     </div>
   );
 }
@@ -1919,7 +1919,7 @@ function IconBoxLarge() {
 
 function Container29() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col font-['Inter:Regular',sans-serif] font-normal gap-[1.774px] items-start justify-center min-h-px min-w-px not-italic relative text-ellipsis" data-name="Container">
+    <div className="content-stretch flex flex-[1_0_0] flex-col font-['Lebowski',sans-serif] font-normal gap-[1.774px] items-start justify-center min-h-px min-w-px not-italic relative text-ellipsis" data-name="Container">
       <div className="flex flex-col justify-center leading-[0] overflow-hidden relative shrink-0 text-[#1c1c1e] text-[14.19px] w-full">
         <p className="leading-[17.74px]">Андрей Игнатов</p>
       </div>
@@ -1966,7 +1966,7 @@ function IconBoxLarge1() {
 function Container30() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[1.774px] items-start justify-center min-h-px min-w-px relative" data-name="Container">
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[14.19px] text-ellipsis w-full">
+      <div className="flex flex-col font-['Lebowski',sans-serif] font-normal justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#1c1c1e] text-[14.19px] text-ellipsis w-full">
         <p className="leading-[17.74px]">+7 *** *** ** 86</p>
       </div>
     </div>
@@ -2015,7 +2015,7 @@ function IconBoxLarge2() {
 
 function Container31() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col font-['Inter:Regular',sans-serif] font-normal gap-[1.774px] items-start justify-center min-h-px min-w-px not-italic relative text-ellipsis" data-name="Container">
+    <div className="content-stretch flex flex-[1_0_0] flex-col font-['Lebowski',sans-serif] font-normal gap-[1.774px] items-start justify-center min-h-px min-w-px not-italic relative text-ellipsis" data-name="Container">
       <div className="flex flex-col justify-center leading-[0] overflow-hidden relative shrink-0 text-[#1c1c1e] text-[14.19px] w-full">
         <p className="leading-[17.74px]">Андрей Игнатов</p>
       </div>
@@ -2404,7 +2404,7 @@ function Frame56() {
       {/* ── Text: design system ───────────────────────────────────────── */}
       <BlurReveal
         as="p"
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         delay={0}
         wordDelay={0.048}
       >
@@ -2425,7 +2425,7 @@ function Frame56() {
 
       {/* ── Text: one-tap login ────────────────────────────────���─────── */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -2449,7 +2449,7 @@ function Frame56() {
 
       {/* ── Text: NDA / partner cabinet ──────────────────────────────── */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -2479,7 +2479,7 @@ function Frame56() {
 
       {/* ── Text: user cabinet ───────────────────────────────────────── */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -2509,7 +2509,7 @@ function Frame56() {
       {/* ── Text: dark theme ──────────────────────────────────────────── */}
       <BlurReveal
         as="p"
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         delay={0}
         wordDelay={0.055}
       >
@@ -2532,7 +2532,7 @@ function Frame56() {
 
       {/* ── Text: market leaders ──���──────────────────────────────────── */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"

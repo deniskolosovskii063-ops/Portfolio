@@ -237,7 +237,7 @@ function useIsMobile() {
 function StatBadge({ value }: { value: string }) {
   return (
     <div className="bg-gradient-to-b flex from-[#c8ffab] from-[20%] items-center justify-center px-[6px] py-[6px] relative rounded-[24px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.16)] shrink-0 to-[#2e8600]">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-none not-italic text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">{value}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-none not-italic text-[#13461e] text-[18px] tracking-[-0.72px] whitespace-nowrap">{value}</p>
       <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_-1px_4px_0px_white]" />
     </div>
   );
@@ -352,7 +352,7 @@ export function GIDContent() {
             initial={{ opacity: 0, y: 22, filter: 'blur(10px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 1.0, delay: 0.45, ease: smoothEase }}
-            className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap"
+            className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap"
           >
             <p className="mb-0">{fixText('ГИД — цифровая платформа взаимодействия сотрудников и бизнеса, объединяющая 30+ сервисов, коммуникации и корпоративные процессы в единой экосистеме.')}</p>
             <p className="mb-0"><br aria-hidden="true" />{fixText('Цифровая платформа — ключевая точка взаимодействия сотрудника и компании: она объединяет сервисы, обучение, коммуникации и партнёрские предложения, формируя единое цифровое пространство для работы и повседневных задач.')}</p>
@@ -371,7 +371,7 @@ export function GIDContent() {
             initial={{ opacity: 0, y: 18, filter: 'blur(8px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 0.85, delay: 0.9, ease: smoothEase }}
-            className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full"
+            className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full"
           >
             {fixText('Результат работы над продуктом за 3 года:')}
           </motion.p>
@@ -471,8 +471,8 @@ export function GIDContent() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">{fixText('Система лояльности')}</p>
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+        <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">{fixText('Система лояльности')}</p>
+        <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
           {fixText('Платформа ГИД включает встроенную систему мотивации сотрудников, основанную на геймификации и внутренней экономике: сотрудники получают баллы, достижения и награды, используют корпоративную валюту и могут обменивать её в магазине бонусов. ')}
           <br aria-hidden="true" /><br aria-hidden="true" />
           {fixText('Такая механика повышает вовлечённость сотрудников, стимулирует обучение и помогает снижать текучесть персонала.')}
@@ -488,7 +488,7 @@ export function GIDContent() {
           ACHIEVEMENTS — text + 2 iPhones
       ════════════════════════════════════════════════════════════════════ */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -575,10 +575,10 @@ export function GIDContent() {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.9, ease: smoothEase }}
       >
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">
+        <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[28px] sm:text-[32px] text-white tracking-[-0.96px]">
           {fixText('Каналы')}
         </p>
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
+        <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full whitespace-pre-wrap">
           {fixText('В приложении ГИД есть система каналов, аналогичная каналам в мессенджерах.')}
           <br aria-hidden="true" /><br aria-hidden="true" />
           {fixText('В одном разделе собраны все кор��оративные и пользовательские каналы, где сотрудники могут читать новости компании, подписываться на тематические сообщества и взаимодействовать с контентом.')}
@@ -646,7 +646,7 @@ export function GIDContent() {
 
       {/* Comments text */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -671,7 +671,7 @@ export function GIDContent() {
           BLOGS — text + 2 iPhones
       ════════════════════════════════════════════════════════════════════ */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -718,7 +718,7 @@ export function GIDContent() {
       <Phone src={imgIPhone15} />
 
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -741,7 +741,7 @@ export function GIDContent() {
       ════════════════════════════════════════════════════════════════════ */}
       <BlurReveal
         as="p"
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         delay={0}
         wordDelay={0.048}
       >
@@ -783,7 +783,7 @@ export function GIDContent() {
           Figma: text y=-196px, photo y=-80px, phones y=957px (50px overlap)
       ═════════════════════════════════════════════════════════════════���══ */}
       <motion.p
-        className="relative z-10 font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px] sm:-mb-[250px]"
+        className="relative z-10 font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px] sm:-mb-[250px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -822,7 +822,7 @@ export function GIDContent() {
           GAZPROM BONUS — text + woman photo (left) + iPhone (right)
       ════════════════════════════════════════════════════════════════════ */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px] whitespace-pre-wrap"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px] whitespace-pre-wrap"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -902,7 +902,7 @@ export function GIDContent() {
           SHOP — text + 2 iPhones + man pill photo below
       ════════════════════════════════════════════════════════════════════ */}
       <motion.p
-        className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -941,7 +941,7 @@ export function GIDContent() {
       </motion.div>
 
       <motion.p
-        className="relative z-10 font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
+        className="relative z-10 font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic text-[16px] sm:text-[20px] text-white tracking-[-0.2px] w-full max-w-[568px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"

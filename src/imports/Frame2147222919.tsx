@@ -125,7 +125,7 @@ function Frame15() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <Group />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">MTS Web Services [Cloud]</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">MTS Web Services [Cloud]</p>
     </div>
   );
 }
@@ -143,7 +143,7 @@ function Frame9() {
   return (
     <div className="content-stretch flex flex-col gap-[60px] items-start relative shrink-0 w-[553px]">
       <Frame11 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content] whitespace-pre-wrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content] whitespace-pre-wrap">
         {`MTS Web Services (MWS) — технологическое подразделение МТС, создающее облачные платформы, AI-сервисы и инструменты для разработки цифровых продуктов бизнеса. Платформа объединяет инфраструктурные сервисы, работу с данными, инструменты разработки и решения для построения масштабируемых цифровых систем. `}
         <br aria-hidden="true" />
         <br aria-hidden="true" />
@@ -156,7 +156,7 @@ function Frame9() {
 function Frame5() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">63,8 млрд ₽</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">63,8 млрд ₽</p>
     </div>
   );
 }
@@ -165,7 +165,7 @@ function Frame() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame5 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">выручка MTS Web Services</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">выручка MTS Web Services</p>
     </div>
   );
 }
@@ -173,7 +173,7 @@ function Frame() {
 function Frame6() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">40%</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">40%</p>
     </div>
   );
 }
@@ -182,7 +182,7 @@ function Frame1() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame6 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">{`рост выручки облачного направления MWS Cloud `}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">{`рост выручки облачного направления MWS Cloud `}</p>
     </div>
   );
 }
@@ -199,7 +199,7 @@ function Frame13() {
 function Frame7() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">20+</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">20+</p>
     </div>
   );
 }
@@ -208,7 +208,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame7 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">{`облачных сервисов платформы для бизнеса `}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">{`облачных сервисов платформы для бизнеса `}</p>
     </div>
   );
 }
@@ -216,7 +216,7 @@ function Frame2() {
 function Frame8() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">99,99%</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">99,99%</p>
     </div>
   );
 }
@@ -225,7 +225,7 @@ function Frame3() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame8 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">{`доступность облачной инфраструктуры (SLA) `}</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.6)] tracking-[-0.2px] w-full">{`доступность облачной инфраструктуры (SLA) `}</p>
     </div>
   );
 }

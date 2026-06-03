@@ -1,53 +1,71 @@
-/* ─── Inter via jsDelivr/@fontsource — latin + cyrillic, только Regular (400) ─── */
-/* Google Fonts (fonts.googleapis.com) заблокирован в России с 2022 года,           */
-/* поэтому используем только jsDelivr, который доступен без VPN.                     */
+/* ─── Lebowski by Pragmatica (Regular) — self-hosted from /public/fonts ─────── */
+/* Files live in the repo and are served from the site root, so the font works  */
+/* for every visitor without Google Fonts (blocked in RU) or any CDN.           */
 
 @font-face {
-  font-family: 'Inter';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  font-family: 'Lebowski';
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Map Tailwind font-medium / semibold / bold utilities to the same Regular file   */
-/* so UI components keep class names but never load heavier masters or faux-bold. */
+/* Map Tailwind font-medium / semibold / bold utilities to the same Regular file */
+/* so UI components keep their class names but never load a heavier master.       */
 
 @font-face {
-  font-family: 'Inter';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  font-family: 'Lebowski';
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  font-family: 'Lebowski';
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  font-family: 'Lebowski';
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-/* ─── Figma-exported name aliases → Inter Regular (same woff2, weight 400) ───── */
-/* Keeps legacy class names working while rendering everything at regular weight.   */
+/* ─── Inter (jsDelivr) kept ONLY as a fallback face if Lebowski fails to load ── */
+/* Google Fonts is blocked in Russia; jsDelivr is reachable without a VPN.       */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Legacy Figma-exported family aliases → Lebowski Regular ────────────────── */
+/* These keep any remaining inline class names (font-['Inter:Regular',…] etc.)    */
+/* rendering Lebowski even if a class was missed during the migration.            */
 
 @font-face {
   font-family: 'Inter:Regular';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -55,18 +73,19 @@
 
 @font-face {
   font-family: 'Inter:Medium';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Tailwind: font-['Inter:Semi_Bold',...] → computed family name 'Inter:Semi Bold' */
 @font-face {
   font-family: 'Inter:Semi Bold';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -74,19 +93,19 @@
 
 @font-face {
   font-family: 'Inter:Bold';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* ─── Figma-import aliases: TT Interphases Pro → Inter Regular ───────────────── */
-
 @font-face {
   font-family: 'TT Interphases Pro:DemiBold';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -94,19 +113,19 @@
 
 @font-face {
   font-family: 'TT Interphases Pro:Medium';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* ─── Figma-import alias: Roboto → Inter Regular ─────────────────────────────── */
-
 @font-face {
   font-family: 'Roboto:Regular';
-  src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-cyrillic-400-normal.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/LebowskiPragmatica-Regular.woff2') format('woff2'),
+       url('/fonts/LebowskiPragmatica-Regular.woff') format('woff'),
+       url('/fonts/LebowskiPragmatica-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

@@ -86,7 +86,7 @@ function ZenitLogo() {
           </div>
         </div>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic text-[24px] sm:text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">
         Зенит
       </p>
     </div>
@@ -162,7 +162,7 @@ function SectionText({ children }: { children: React.ReactNode }) {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.85, ease: smoothEase }}
     >
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic text-[18px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap">
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[1.4] not-italic text-[18px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap">
         {children}
       </p>
     </motion.div>
@@ -240,7 +240,7 @@ export function ZenitContent() {
           transition={{ duration: 0.9, ease: smoothEase }}
         >
           <ZenitLogo />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic text-[18px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap">
+          <p className="font-['Lebowski',sans-serif] font-normal leading-[1.4] not-italic text-[18px] sm:text-[20px] text-white tracking-[-0.2px] whitespace-pre-wrap">
             {fixText('Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте.\n\nПриложение позволяет следить за жизнью команды в еальном времени: получать новости, смотреть статистику игроков и матчей, следить за календарём игр, смотреть видео и пользоваться Матч-центр с подробной информацией о матчах и соперниках.')}
           </p>
         </motion.div>

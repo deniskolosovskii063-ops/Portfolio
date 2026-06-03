@@ -25,7 +25,7 @@ function Frame17() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <Group />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">MTS Cloud</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">MTS Cloud</p>
     </div>
   );
 }
@@ -33,7 +33,7 @@ function Frame17() {
 function Frame5() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">320+</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">320+</p>
     </div>
   );
 }
@@ -42,7 +42,7 @@ function Frame() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame5 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Уникальных экранов</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Уникальных экранов</p>
     </div>
   );
 }
@@ -50,7 +50,7 @@ function Frame() {
 function Frame6() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">120+</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">120+</p>
     </div>
   );
 }
@@ -59,7 +59,7 @@ function Frame1() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame6 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">UI-компонентов дизайн-системы</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">UI-компонентов дизайн-системы</p>
     </div>
   );
 }
@@ -76,7 +76,7 @@ function Frame10() {
 function Frame7() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">20+</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">20+</p>
     </div>
   );
 }
@@ -85,7 +85,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame7 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Сервисов для болельщиков</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Сервисов для болельщиков</p>
     </div>
   );
 }
@@ -93,7 +93,7 @@ function Frame2() {
 function Frame8() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">80 часов</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[27px] not-italic relative shrink-0 text-[32px] text-white tracking-[-0.96px] whitespace-nowrap">80 часов</p>
     </div>
   );
 }
@@ -102,7 +102,7 @@ function Frame3() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-h-px min-w-px relative" data-name="Frame">
       <Frame8 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Интервью с респондентами</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[#868585] text-[16px] tracking-[-0.16px] w-full">Интервью с респондентами</p>
     </div>
   );
 }
@@ -137,7 +137,7 @@ function Frame15() {
   return (
     <div className="bg-[#181716] content-stretch flex h-[60px] items-center justify-center px-[24px] py-[10px] relative rounded-[1000px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#2e2d2d] border-solid inset-0 pointer-events-none rounded-[1000px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">Смотреть кейс</p>
     </div>
   );
 }
@@ -146,7 +146,7 @@ function Frame9() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px min-w-px relative self-stretch">
       <Frame17 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте.</p>
+      <p className="font-['Lebowski',sans-serif] font-normal leading-[28px] min-w-full not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] w-[min-content]">Мобильное приложение футбольного клуба «Зенит» — цифровая платформа для болельщиков, объединяющая новости клуба, матчи, статистику и медиаконтент в одном месте.</p>
       <Frame14 />
       <Frame15 />
     </div>
